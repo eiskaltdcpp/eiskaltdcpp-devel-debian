@@ -1,3 +1,21 @@
+eiskaltdcpp-unstable (2.2.5-20111008-230820-21939aa-0ppa1~oneiric1) oneiric; urgency=low
+
+  * Minor update from GIT 2.2.x branch.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sat, 08 Oct 2011 23:08:33 +0300
+
+eiskaltdcpp-unstable (2.2.5-20111008-220345-8b0afb8-0ppa1~oneiric1) oneiric; urgency=low
+
+  * Minor update from GIT master branch.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sat, 08 Oct 2011 22:04:51 +0300
+
+eiskaltdcpp-unstable (2.2.5-20111007-190722-8e6a03a-0ppa1~oneiric1) oneiric; urgency=low
+
+  * Minor update from GIT master branch.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Fri, 07 Oct 2011 19:08:32 +0300
+
 eiskaltdcpp-unstable (2.2.5-20111002-184153-e345a35-0ppa1~oneiric1) oneiric; urgency=low
 
   * Minor update from GIT master branch.
