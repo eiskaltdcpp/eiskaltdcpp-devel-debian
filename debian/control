@@ -8,8 +8,8 @@ Build-Depends: debhelper (>= 7), cmake (>= 2.6.0), po-debconf, autotools-dev, fa
  libboost-dev,
  libbz2-dev, zlib1g-dev, pkg-config, libssl-dev, libaspell-dev, libidn11-dev
 Homepage: http://code.google.com/p/eiskaltdc/
-Vcs-Git: git://github.com/negativ/eiskaltdcpp.git
-Vcs-Browser: https://github.com/negativ/eiskaltdcpp
+Vcs-Git: git://github.com/tehnick/eiskaltdcpp-unstable-debian.git
+Vcs-Browser: https://github.com/tehnick/eiskaltdcpp-unstable-debian/tree/launchpad/debian
 Standards-Version: 3.9.2
 
 Package: eiskaltdcpp-unstable
@@ -26,10 +26,10 @@ Conflicts: eiskaltdcpp
 Description: EiskaltDC++ meta-package
  This package installs all packages related with EiskaltDC++.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -42,10 +42,10 @@ Breaks: eiskaltdcpp (<< 2.1.0)
 Description: common files for EiskaltDC++
  This package contains the common files for the different EiskaltDC++ versions.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -58,10 +58,10 @@ Conflicts: eiskaltdcpp-emoticons
 Description: emoticons for EiskaltDC++
  This package contains the emoticon packs for EiskaltDC++.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -76,10 +76,10 @@ Description: scripts examples for EiskaltDC++
  This package contains the scripts examples for EiskaltDC++.
  It used by /sh and /alias chat commands (see man-page or /help in chat).
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -91,10 +91,10 @@ Conflicts: eiskaltdcpp-sounds
 Description: sound files for EiskaltDC++
  This package contains the sound files for EiskaltDC++.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -110,10 +110,10 @@ Conflicts: libdcpp2.0.x, libdcpp2.1.x,
 Description: DC++ kernel library from EiskaltDC++
  This package installs only DC++ kernel library which required EiskaltDC++.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -130,10 +130,10 @@ Conflicts: libeiskaltdcpp2.1.x-dbg, libeiskaltdcpp2.2-dbg,
 Description: DC++ kernel from EiskaltDC++ (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ kernel library.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -151,10 +151,10 @@ Breaks: eiskaltdcpp (<< 2.1.0)
 Description: EiskaltDC++ GUI on Qt
  This package installs only EiskaltDC++ with GUI based on Qt.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -171,10 +171,10 @@ Suggests: php5-cli,
 Description: data files for EiskaltDC++ Qt
  This package contains the data files for EiskaltDC++ Qt.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -190,10 +190,10 @@ Conflicts: eiskaltdcpp-qt-dbg
 Description: EiskaltDC++ GUI on Qt (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ Qt.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -209,10 +209,10 @@ Description: EiskaltDC++ GUI on Gtk
  This package installs only EiskaltDC++ with GUI based on Gtk
  (based on FreeDC++ and LinuxDC++).
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -228,10 +228,10 @@ Suggests: php5-cli,
 Description: data files for EiskaltDC++ Gtk
  This package contains the data files for EiskaltDC++ Gtk.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -247,10 +247,10 @@ Conflicts: eiskaltdcpp-gtk-dbg
 Description: EiskaltDC++ GUI on Gtk (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ Gtk.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -263,10 +263,10 @@ Conflicts: eiskaltdcpp-daemon
 Description: EiskaltDC++ daemon
  This package installs only EiskaltDC++ daemon (without any GUI).
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
 
@@ -282,9 +282,9 @@ Conflicts: eiskaltdcpp-daemon-dbg
 Description: EiskaltDC++ daemon (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ daemon.
  .
- EiskaltDC++ is a cross-platform program that uses the Direct Connect
- and ADC protocol. It is compatible with other DC clients, such as the original
- DC from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with
- all common DC hub software.
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
  .
  (This is daily builds of the EiskaltDC++ packages)
