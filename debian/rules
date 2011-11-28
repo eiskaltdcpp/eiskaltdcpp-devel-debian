@@ -83,6 +83,7 @@ binary-arch: build install
 	dh_strip -peiskaltdcpp-qt-unstable --dbg-package=eiskaltdcpp-qt-unstable-dbg
 	dh_strip -peiskaltdcpp-gtk-unstable --dbg-package=eiskaltdcpp-gtk-unstable-dbg
 	dh_strip -peiskaltdcpp-daemon-unstable --dbg-package=eiskaltdcpp-daemon-unstable-dbg
+	dh_lintian -a
 	dh_compress -a
 	dh_fixperms -a
 	dh_makeshlibs -plibeiskaltdcpp2.2-unstable
