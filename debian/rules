@@ -16,8 +16,9 @@ CMAKEOPTS = -DCMAKE_BUILD_TYPE=RelWithDebInfo \
             -DLUA_SCRIPT=ON -DWITH_LUASCRIPTS=ON \
             -DPERL_REGEX=ON -DWITH_DHT=ON \
             -DWITH_SOUNDS=ON \
-            -DUSE_QT=ON -DUSE_JS=ON \
+            -DUSE_QT=ON \
             -DUSE_QT_SQLITE=ON \
+            -DUSE_JS=ON -DUSE_QT_QML=ON \
             -DUSE_ASPELL=ON -DFREE_SPACE_BAR_C=ON \
             -DUSE_GTK=ON -DCHECK_GTK_DEPRECATED=ON \
             -DUSE_LIBGNOME2=OFF -DUSE_LIBNOTIFY=ON \
