@@ -8,7 +8,8 @@ ifeq (,$(NUMJOBS))
 	NUMJOBS = 1
 endif
 
-BUILDDIR = builddir
+BUILDDIR  = builddir
+BUILDDIR2 = builddir2
 
 CMAKEOPTS = -DCMAKE_BUILD_TYPE=RelWithDebInfo \
             -DCMAKE_INSTALL_PREFIX=/usr \
@@ -17,15 +18,21 @@ CMAKEOPTS = -DCMAKE_BUILD_TYPE=RelWithDebInfo \
             -DPERL_REGEX=ON -DWITH_DHT=ON \
             -DWITH_SOUNDS=ON \
             -DUSE_QT=ON \
-            -DUSE_QT_SQLITE=ON \
-            -DUSE_JS=ON -DUSE_QT_QML=ON \
             -DUSE_ASPELL=ON -DFREE_SPACE_BAR_C=ON \
-            -DUSE_GTK=ON -DCHECK_GTK_DEPRECATED=ON \
+            -DCHECK_GTK_DEPRECATED=ON \
             -DUSE_LIBGNOME2=OFF -DUSE_LIBNOTIFY=ON \
             -DCREATE_MO=ON -DUPDATE_PO=OFF \
             -DNO_UI_DAEMON=ON \
             -DXMLRPC_DAEMON=OFF -DJSONRPC_DAEMON=ON \
             ..
+
+OPTSSTEP1 = -DUSE_QT_SQLITE=ON \
+            -DUSE_JS=ON -DUSE_QT_QML=ON \
+            -DUSE_GTK=ON -DUSE_GTK3=OFF
+
+OPTSSTEP2 = -DUSE_QT_SQLITE=OFF \
+            -DUSE_JS=OFF -DUSE_QT_QML=OFF \
+            -DUSE_GTK=OFF -DUSE_GTK3=ON
 
 # This option is for daily builds of the EiskaltDC++ packages on Launchpad
 # See https://launchpad.net/~tehnick/+archive/tehnick for more information
@@ -36,7 +43,7 @@ CMAKEOPTS += -DDCPP_REVISION="$(REVISION)"
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	mkdir -p $(BUILDDIR) && cd $(BUILDDIR) && cmake $(CMAKEOPTS)
+	mkdir -p $(BUILDDIR) && cd $(BUILDDIR) && cmake $(CMAKEOPTS) $(OPTSSTEP1)
 	touch $@
 build: configure build-arch build-indep
 build-arch: build-stamp
@@ -44,13 +51,19 @@ build-indep: build-stamp
 build-stamp:
 	dh_testdir
 	cd $(BUILDDIR) && $(MAKE) -j$(NUMJOBS)
+	cp -ra $(BUILDDIR) $(BUILDDIR2)
+	cd $(BUILDDIR2) && find . -type f -iname '*make*' -exec sed -i "s|$(BUILDDIR)|$(BUILDDIR2)|" {} \;
+	cd $(BUILDDIR2) && cmake $(CMAKEOPTS) $(OPTSSTEP2)
+	cd $(BUILDDIR2) && $(MAKE) -j$(NUMJOBS)
 	touch $@
 clean: do-clean
 do-clean:
 	dh_testdir
 	dh_testroot
 	[ ! -f Makefile ] || ( cd $(BUILDDIR) && $(MAKE) clean )
+	[ ! -f Makefile ] || ( cd $(BUILDDIR2) && $(MAKE) clean )
 	test ! -d $(BUILDDIR) || rm -r $(BUILDDIR)
+	test ! -d $(BUILDDIR2) || rm -r $(BUILDDIR2)
 	dh_clean
 install: build
 	dh_testdir
@@ -58,6 +71,12 @@ install: build
 	dh_prep
 	dh_installdirs
 	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+	cp $(CURDIR)/debian/eiskaltdcpp-gtk3.desktop \
+			$(CURDIR)/debian/tmp/usr/share/applications/eiskaltdcpp-gtk3.desktop
+	cp $(BUILDDIR2)/eiskaltdcpp-gtk/eiskaltdcpp-gtk \
+			$(CURDIR)/debian/tmp/usr/bin/eiskaltdcpp-gtk3
+	cp $(BUILDDIR2)/eiskaltdcpp-gtk/eiskaltdcpp-gtk.1.gz \
+			$(CURDIR)/debian/tmp/usr/share/man/man1/eiskaltdcpp-gtk3.1.gz
 binary-indep: build install
 	dh_testdir -i
 	dh_testroot -i
@@ -79,10 +98,15 @@ binary-arch: build install
 	dh_installdocs -a
 	dh_installman -a
 	dh_link -a
-	dh_strip -Nlibeiskaltdcpp2.2-unstable -Neiskaltdcpp-qt-unstable -Neiskaltdcpp-gtk-unstable -Neiskaltdcpp-daemon-unstable
+	dh_strip -Nlibeiskaltdcpp2.2-unstable \
+			-Neiskaltdcpp-qt-unstable \
+			-Neiskaltdcpp-gtk-unstable \
+			-Neiskaltdcpp-gtk3-unstable \
+			-Neiskaltdcpp-daemon-unstable
 	dh_strip -plibeiskaltdcpp2.2-unstable --dbg-package=libeiskaltdcpp2.2-unstable-dbg
 	dh_strip -peiskaltdcpp-qt-unstable --dbg-package=eiskaltdcpp-qt-unstable-dbg
 	dh_strip -peiskaltdcpp-gtk-unstable --dbg-package=eiskaltdcpp-gtk-unstable-dbg
+	dh_strip -peiskaltdcpp-gtk3-unstable --dbg-package=eiskaltdcpp-gtk3-unstable-dbg
 	dh_strip -peiskaltdcpp-daemon-unstable --dbg-package=eiskaltdcpp-daemon-unstable-dbg
 	dh_lintian -a
 	dh_compress -a
