@@ -15,9 +15,8 @@ Standards-Version: 3.9.2
 Package: eiskaltdcpp-unstable
 Architecture: all
 Depends: ${misc:Depends},
- eiskaltdcpp-qt-unstable (>= ${binary:Version}),
- eiskaltdcpp-gtk-unstable (>= ${binary:Version}),
- eiskaltdcpp-daemon-unstable (>= ${binary:Version}),
+ eiskaltdcpp-qt-unstable (>= ${binary:Version})  |
+ eiskaltdcpp-gtk-unstable (>= ${binary:Version}) | eiskaltdcpp-gtk3-unstable (>= ${binary:Version}),
  eiskaltdcpp-emoticons-unstable,
  eiskaltdcpp-scripts-unstable,
  eiskaltdcpp-sounds-unstable
@@ -226,7 +225,7 @@ Replaces: eiskaltdcpp-gtk3
 Conflicts: eiskaltdcpp-gtk3
 Description: EiskaltDC++ GUI on Gtk3
  This package installs only EiskaltDC++ with GUI based on Gtk3. This is an
- experimental mode of GUI. If you have some problems use Gtk2 based UI
+ experimental mode of GUI. If you have some problems use Gtk2 based UI instead
  (package eiskaltdcpp-gtk-unstable).
  .
  EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
