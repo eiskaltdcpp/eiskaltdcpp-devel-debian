@@ -71,13 +71,13 @@ install: build
 	dh_prep
 	dh_installdirs
 	cd $(BUILDDIR1) && $(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
-	cp $(CURDIR)/debian/eiskaltdcpp-qt-min.desktop \
-			$(CURDIR)/debian/tmp/usr/share/applications/eiskaltdcpp-qt-min.desktop
+	cp $(CURDIR)/debian/eiskaltdcpp-qt-mini.desktop \
+			$(CURDIR)/debian/tmp/usr/share/applications/eiskaltdcpp-qt-mini.desktop
 	cp $(BUILDDIR2)/eiskaltdcpp-qt/eiskaltdcpp-qt \
-			$(CURDIR)/debian/tmp/usr/bin/eiskaltdcpp-qt-min
-	chrpath -d $(CURDIR)/debian/tmp/usr/bin/eiskaltdcpp-qt-min
+			$(CURDIR)/debian/tmp/usr/bin/eiskaltdcpp-qt-mini
+	chrpath -d $(CURDIR)/debian/tmp/usr/bin/eiskaltdcpp-qt-mini
 	cp $(BUILDDIR2)/eiskaltdcpp-qt/eiskaltdcpp-qt.1.gz \
-			$(CURDIR)/debian/tmp/usr/share/man/man1/eiskaltdcpp-qt-min.1.gz
+			$(CURDIR)/debian/tmp/usr/share/man/man1/eiskaltdcpp-qt-mini.1.gz
 	cp $(CURDIR)/debian/eiskaltdcpp-gtk3.desktop \
 			$(CURDIR)/debian/tmp/usr/share/applications/eiskaltdcpp-gtk3.desktop
 	cp $(BUILDDIR2)/eiskaltdcpp-gtk/eiskaltdcpp-gtk \
@@ -108,20 +108,20 @@ binary-arch: build install
 	dh_link -a
 	dh_strip -Nlibeiskaltdcpp2.2-unstable \
 			-Neiskaltdcpp-qt-unstable \
-			-Neiskaltdcpp-qt-min-unstable \
+			-Neiskaltdcpp-qt-mini-unstable \
 			-Neiskaltdcpp-gtk-unstable \
 			-Neiskaltdcpp-gtk3-unstable \
 			-Neiskaltdcpp-daemon-unstable
 	dh_strip -plibeiskaltdcpp2.2-unstable --dbg-package=libeiskaltdcpp2.2-unstable-dbg
 	dh_strip -peiskaltdcpp-qt-unstable --dbg-package=eiskaltdcpp-qt-unstable-dbg
-	dh_strip -peiskaltdcpp-qt-min-unstable --dbg-package=eiskaltdcpp-qt-min-unstable-dbg
+	dh_strip -peiskaltdcpp-qt-mini-unstable --dbg-package=eiskaltdcpp-qt-mini-unstable-dbg
 	dh_strip -peiskaltdcpp-gtk-unstable --dbg-package=eiskaltdcpp-gtk-unstable-dbg
 	dh_strip -peiskaltdcpp-gtk3-unstable --dbg-package=eiskaltdcpp-gtk3-unstable-dbg
 	dh_strip -peiskaltdcpp-daemon-unstable --dbg-package=eiskaltdcpp-daemon-unstable-dbg
 	dh_lintian -a
 	dh_compress -a
 	dh_fixperms -a
-	dh_makeshlibs -plibeiskaltdcpp2.2-unstable
+	dh_makeshlibs -V -plibeiskaltdcpp2.2-unstable
 	dh_installdeb -a
 	dh_shlibdeps -a -ldebian/libeiskaltdcpp2.2-unstable/usr/lib
 	dh_installdebconf -a

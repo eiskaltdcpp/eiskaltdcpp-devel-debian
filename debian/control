@@ -16,7 +16,7 @@ Package: eiskaltdcpp-unstable
 Architecture: all
 Depends: ${misc:Depends},
  eiskaltdcpp-qt-unstable (>= ${binary:Version}) |
- eiskaltdcpp-qt-min-unstable (>= ${binary:Version}) |
+ eiskaltdcpp-qt-mini-unstable (>= ${binary:Version}) |
  eiskaltdcpp-gtk-unstable (>= ${binary:Version}) |
  eiskaltdcpp-gtk3-unstable (>= ${binary:Version}),
  eiskaltdcpp-emoticons-unstable,
@@ -153,19 +153,19 @@ Description: EiskaltDC++ GUI on Qt
  .
  (This is daily builds of the EiskaltDC++ packages)
 
-Package: eiskaltdcpp-qt-min-unstable
+Package: eiskaltdcpp-qt-mini-unstable
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
  eiskaltdcpp-qt-data-unstable (= ${source:Version}),
  eiskaltdcpp-common-unstable
-Replaces: eiskaltdcpp-qt-min
-Conflicts: eiskaltdcpp-qt-min
+Replaces: eiskaltdcpp-qt-mini
+Conflicts: eiskaltdcpp-qt-mini
 Description: EiskaltDC++ GUI on Qt (stripped-down version)
  This package installs only EiskaltDC++ with GUI based on Qt. This is
  stripped-down version of program. Such features were disabled:
- - Qt Declarative UI support
- - QtScript basic support
- - SQLite support
+  - Qt Declarative UI support
+  - QtScript basic support
+  - SQLite support
  .
  EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
  protocols. It is compatible with other DC clients, such as the original DC
@@ -213,21 +213,21 @@ Description: EiskaltDC++ GUI on Qt (debug symbols)
  .
  (This is daily builds of the EiskaltDC++ packages)
 
-Package: eiskaltdcpp-qt-min-unstable-dbg
+Package: eiskaltdcpp-qt-mini-unstable-dbg
 Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
- eiskaltdcpp-qt-min-unstable (= ${binary:Version}),
+ eiskaltdcpp-qt-mini-unstable (= ${binary:Version}),
  libeiskaltdcpp2.2-unstable-dbg (= ${binary:Version})
-Replaces: eiskaltdcpp-qt-min-dbg
-Conflicts: eiskaltdcpp-qt-min-dbg
+Replaces: eiskaltdcpp-qt-mini-dbg
+Conflicts: eiskaltdcpp-qt-mini-dbg
 Description: EiskaltDC++ GUI on Qt (stripped-down version) (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ Qt. This is
  stripped-down version of program. Such features were disabled:
- - Qt Declarative UI support
- - QtScript basic support
- - SQLite support
+  - Qt Declarative UI support
+  - QtScript basic support
+  - SQLite support
  .
  EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
  protocols. It is compatible with other DC clients, such as the original DC
