@@ -8,7 +8,7 @@ ifeq (,$(NUMJOBS))
 	NUMJOBS = 1
 endif
 
-BUILDDIR  = builddir
+BUILDDIR1 = builddir1
 BUILDDIR2 = builddir2
 
 CMAKEOPTS = -DCMAKE_BUILD_TYPE=RelWithDebInfo \
@@ -43,16 +43,16 @@ CMAKEOPTS += -DDCPP_REVISION="$(REVISION)"
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	mkdir -p $(BUILDDIR) && cd $(BUILDDIR) && cmake $(CMAKEOPTS) $(OPTSSTEP1)
+	mkdir -p $(BUILDDIR1) && cd $(BUILDDIR1) && cmake $(CMAKEOPTS) $(OPTSSTEP1)
 	touch $@
 build: configure build-arch build-indep
 build-arch: build-stamp
 build-indep: build-stamp
 build-stamp:
 	dh_testdir
-	cd $(BUILDDIR) && $(MAKE) -j$(NUMJOBS)
-	cp -ra $(BUILDDIR) $(BUILDDIR2)
-	cd $(BUILDDIR2) && find . -type f -iname '*make*' -exec sed -i "s|$(BUILDDIR)|$(BUILDDIR2)|" {} \;
+	cd $(BUILDDIR1) && $(MAKE) -j$(NUMJOBS)
+	cp -ra $(BUILDDIR1) $(BUILDDIR2)
+	cd $(BUILDDIR2) && find . -type f -iname '*make*' -exec sed -i "s|$(BUILDDIR1)|$(BUILDDIR2)|" {} \;
 	cd $(BUILDDIR2) && cmake $(CMAKEOPTS) $(OPTSSTEP2)
 	cd $(BUILDDIR2) && $(MAKE) -j$(NUMJOBS)
 	touch $@
@@ -60,9 +60,9 @@ clean: do-clean
 do-clean:
 	dh_testdir
 	dh_testroot
-	[ ! -f Makefile ] || ( cd $(BUILDDIR) && $(MAKE) clean )
+	[ ! -f Makefile ] || ( cd $(BUILDDIR1) && $(MAKE) clean )
 	[ ! -f Makefile ] || ( cd $(BUILDDIR2) && $(MAKE) clean )
-	test ! -d $(BUILDDIR) || rm -r $(BUILDDIR)
+	test ! -d $(BUILDDIR1) || rm -r $(BUILDDIR1)
 	test ! -d $(BUILDDIR2) || rm -r $(BUILDDIR2)
 	dh_clean
 install: build
@@ -70,7 +70,14 @@ install: build
 	dh_testroot
 	dh_prep
 	dh_installdirs
-	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+	cd $(BUILDDIR1) && $(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+	cp $(CURDIR)/debian/eiskaltdcpp-qt-min.desktop \
+			$(CURDIR)/debian/tmp/usr/share/applications/eiskaltdcpp-qt-min.desktop
+	cp $(BUILDDIR2)/eiskaltdcpp-qt/eiskaltdcpp-qt \
+			$(CURDIR)/debian/tmp/usr/bin/eiskaltdcpp-qt-min
+	chrpath -d $(CURDIR)/debian/tmp/usr/bin/eiskaltdcpp-qt-min
+	cp $(BUILDDIR2)/eiskaltdcpp-qt/eiskaltdcpp-qt.1.gz \
+			$(CURDIR)/debian/tmp/usr/share/man/man1/eiskaltdcpp-qt-min.1.gz
 	cp $(CURDIR)/debian/eiskaltdcpp-gtk3.desktop \
 			$(CURDIR)/debian/tmp/usr/share/applications/eiskaltdcpp-gtk3.desktop
 	cp $(BUILDDIR2)/eiskaltdcpp-gtk/eiskaltdcpp-gtk \
@@ -101,11 +108,13 @@ binary-arch: build install
 	dh_link -a
 	dh_strip -Nlibeiskaltdcpp2.2-unstable \
 			-Neiskaltdcpp-qt-unstable \
+			-Neiskaltdcpp-qt-min-unstable \
 			-Neiskaltdcpp-gtk-unstable \
 			-Neiskaltdcpp-gtk3-unstable \
 			-Neiskaltdcpp-daemon-unstable
 	dh_strip -plibeiskaltdcpp2.2-unstable --dbg-package=libeiskaltdcpp2.2-unstable-dbg
 	dh_strip -peiskaltdcpp-qt-unstable --dbg-package=eiskaltdcpp-qt-unstable-dbg
+	dh_strip -peiskaltdcpp-qt-min-unstable --dbg-package=eiskaltdcpp-qt-min-unstable-dbg
 	dh_strip -peiskaltdcpp-gtk-unstable --dbg-package=eiskaltdcpp-gtk-unstable-dbg
 	dh_strip -peiskaltdcpp-gtk3-unstable --dbg-package=eiskaltdcpp-gtk3-unstable-dbg
 	dh_strip -peiskaltdcpp-daemon-unstable --dbg-package=eiskaltdcpp-daemon-unstable-dbg
