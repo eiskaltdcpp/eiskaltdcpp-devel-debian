@@ -75,6 +75,7 @@ install: build
 			$(CURDIR)/debian/tmp/usr/share/applications/eiskaltdcpp-gtk3.desktop
 	cp $(BUILDDIR2)/eiskaltdcpp-gtk/eiskaltdcpp-gtk \
 			$(CURDIR)/debian/tmp/usr/bin/eiskaltdcpp-gtk3
+	chrpath -d $(CURDIR)/debian/tmp/usr/bin/eiskaltdcpp-gtk3
 	cp $(BUILDDIR2)/eiskaltdcpp-gtk/eiskaltdcpp-gtk.1.gz \
 			$(CURDIR)/debian/tmp/usr/share/man/man1/eiskaltdcpp-gtk3.1.gz
 binary-indep: build install
