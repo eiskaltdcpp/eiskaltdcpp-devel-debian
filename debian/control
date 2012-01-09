@@ -333,8 +333,7 @@ Description: EiskaltDC++ GUI on Gtk3 (debug symbols)
 
 Package: eiskaltdcpp-daemon-unstable
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
- libeiskaltdcpp2.2-unstable (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: eiskaltdcpp-daemon
 Conflicts: eiskaltdcpp-daemon
 Description: EiskaltDC++ daemon

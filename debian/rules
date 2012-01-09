@@ -11,6 +11,10 @@ endif
 BUILDDIR1 = builddir1
 BUILDDIR2 = builddir2
 
+PACKAGE = eiskaltdcpp
+
+CUR_VER = $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
+
 CMAKEOPTS = -DCMAKE_BUILD_TYPE=RelWithDebInfo \
             -DCMAKE_INSTALL_PREFIX=/usr \
             -DUSE_MINIUPNP=ON -DLOCAL_MINIUPNP=ON \
@@ -85,6 +89,9 @@ install: build
 	chrpath -d $(CURDIR)/debian/tmp/usr/bin/eiskaltdcpp-gtk3
 	cp $(BUILDDIR2)/eiskaltdcpp-gtk/eiskaltdcpp-gtk.1.gz \
 			$(CURDIR)/debian/tmp/usr/share/man/man1/eiskaltdcpp-gtk3.1.gz
+get-orig-source:
+	wget -4 "http://eiskaltdc.googlecode.com/files/eiskaltdcpp-$(CUR_VER).tar.bz2"
+	mv -f "$(PACKAGE)-$(CUR_VER).tar.bz2" "$(PACKAGE)_$(CUR_VER).orig.tar.bz2"
 binary-indep: build install
 	dh_testdir -i
 	dh_testroot -i
