@@ -336,6 +336,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: eiskaltdcpp-daemon
 Conflicts: eiskaltdcpp-daemon
+Suggests: eiskaltdcpp-cli-unstable
 Description: EiskaltDC++ daemon
  This package installs only EiskaltDC++ daemon (without any GUI).
  Support of control via JSON-RPC is enabled.
@@ -358,6 +359,27 @@ Replaces: eiskaltdcpp-daemon-dbg
 Conflicts: eiskaltdcpp-daemon-dbg
 Description: EiskaltDC++ daemon (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ daemon.
+ .
+ EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
+ protocols. It is compatible with other DC clients, such as the original DC
+ from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
+ common DC hub software.
+ .
+ (This is daily builds of the EiskaltDC++ packages)
+
+Package: eiskaltdcpp-cli-unstable
+Architecture: all
+Depends: ${misc:Depends},
+ libgetopt-long-descriptive-perl,
+ libdata-dump-perl,
+ libjson-rpc-perl,
+ libterm-shellui-perl
+Replaces: eiskaltdcpp-cli
+Conflicts: eiskaltdcpp-cli
+Suggests: eiskaltdcpp-daemon-unstable
+Description: EiskaltDC++ command-line interface
+ This package installs EiskaltDC++ CLI (command-line interface) written in perl.
+ This program is to control eiskaltdcpp-daemon via JSON-RPC protocol.
  .
  EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
  protocols. It is compatible with other DC clients, such as the original DC
