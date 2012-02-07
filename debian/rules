@@ -29,6 +29,7 @@ CMAKEOPTS = -DCMAKE_BUILD_TYPE=RelWithDebInfo \
             -DNO_UI_DAEMON=ON \
             -DXMLRPC_DAEMON=OFF -DJSONRPC_DAEMON=ON \
             -DUSE_CLI_JSONRPC=ON \
+            -DWITH_DEV_FILES=ON \
             ..
 
 OPTSSTEP1 = -DUSE_QT_SQLITE=ON \
