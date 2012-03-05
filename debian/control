@@ -8,13 +8,15 @@ Build-Depends: debhelper (>= 7), po-debconf, autotools-dev,
  libgtk2.0-dev, libglade2-dev, libgtk-3-dev,
  libnotify-dev, liblua5.1-0-dev, libpcre3-dev, libboost-dev,
  libbz2-dev, zlib1g-dev, libssl-dev, libaspell-dev,
- libidn11-dev, libattr1-dev
+ libidn11-dev, libattr1-dev, libcurl4-openssl-dev
 Homepage: http://code.google.com/p/eiskaltdc/
 Vcs-Git: git://github.com/tehnick/eiskaltdcpp-unstable-debian.git
 Vcs-Browser: https://github.com/tehnick/eiskaltdcpp-unstable-debian/tree/launchpad/debian
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+DM-Upload-Allowed: yes
 
 Package: eiskaltdcpp-unstable
+Section: metapackages
 Architecture: all
 Depends: ${misc:Depends},
  eiskaltdcpp-qt-unstable (>= ${binary:Version}) |
