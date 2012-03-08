@@ -93,8 +93,8 @@ install: build
 	cp $(BUILDDIR2)/eiskaltdcpp-gtk/eiskaltdcpp-gtk.1.gz \
 			$(CURDIR)/debian/tmp/usr/share/man/man1/eiskaltdcpp-gtk3.1.gz
 get-orig-source:
-	wget -4 "http://eiskaltdc.googlecode.com/files/eiskaltdcpp-$(CUR_VER).tar.bz2"
-	mv -f "$(PACKAGE)-$(CUR_VER).tar.bz2" "$(PACKAGE)_$(CUR_VER).orig.tar.bz2"
+	wget -4 "http://eiskaltdc.googlecode.com/files/eiskaltdcpp-$(CUR_VER).tar.xz"
+	mv -f "$(PACKAGE)-$(CUR_VER).tar.xz" "$(PACKAGE)_$(CUR_VER).orig.tar.xz"
 binary-indep: build install
 	dh_testdir -i
 	dh_testroot -i
