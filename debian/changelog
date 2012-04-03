@@ -1,26 +1,8 @@
-eiskaltdcpp-unstable (2.2.7-20120326-214143-ffe2832-0ppa1~precise1) precise; urgency=low
+eiskaltdcpp-unstable (2.2.7-20120403-230002-bf09fd7-0ppa1~precise1) precise; urgency=low
 
   * Minor update from GIT master branch.
 
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 26 Mar 2012 21:43:14 +0300
-
-eiskaltdcpp-unstable (2.2.7-20120323-073638-be5228f-0ppa1~precise1) precise; urgency=low
-
-  * Minor update from GIT master branch.
-
- -- Boris Pek <tehnick-8@mail.ru>  Fri, 23 Mar 2012 07:37:23 +0200
-
-eiskaltdcpp-unstable (2.2.7-20120318-222340-4e0454c-0ppa1~precise1) precise; urgency=low
-
-  * Minor update from GIT master branch.
-
- -- Boris Pek <tehnick-8@mail.ru>  Sun, 18 Mar 2012 22:24:12 +0200
-
-eiskaltdcpp-unstable (2.2.7-20120306-195821-b686cc1-0ppa1~precise1) precise; urgency=low
-
-  * Minor update from GIT master branch.
-
- -- Boris Pek <tehnick-8@mail.ru>  Tue, 06 Mar 2012 19:58:48 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 03 Apr 2012 23:00:24 +0300
 
 eiskaltdcpp-unstable (2.0.0~svn35-1) karmic; urgency=low
 
