@@ -8,6 +8,11 @@ ifeq (,$(NUMJOBS))
 	NUMJOBS = 1
 endif
 
+CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS:=$(shell dpkg-buildflags --get CFLAGS) $(CPPFLAGS)
+CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
+LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
+
 BUILDDIR1 = builddir1
 BUILDDIR2 = builddir2
 
@@ -18,6 +23,11 @@ PACKAGE = eiskaltdcpp
 CUR_VER = $(shell uscan --dehs | sed -n 's/.*<upstream-version>\(.*\)<\/upstream-version>.*/\1/p')
 
 CMAKEOPTS = -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+            -DCMAKE_C_FLAGS="$(CFLAGS)" \
+            -DCMAKE_CXX_FLAGS="$(CXXFLAGS)" \
+            -DCMAKE_SHARED_LINKER_FLAGS="$(LDFLAGS)" \
+            -DCMAKE_MODULE_LINKER_FLAGS="$(LDFLAGS)" \
+            -DCMAKE_EXE_LINKER_FLAGS="$(LDFLAGS)" \
             -DCMAKE_INSTALL_PREFIX=/usr \
             -DUSE_MINIUPNP=ON -DLOCAL_MINIUPNP=ON \
             -DLUA_SCRIPT=ON -DWITH_LUASCRIPTS=ON \
@@ -118,5 +128,3 @@ override_dh_shlibdeps:
 get-orig-source:
 	wget -4 "http://eiskaltdc.googlecode.com/files/eiskaltdcpp-$(CUR_VER).tar.xz"
 	mv -f "$(PACKAGE)-$(CUR_VER).tar.xz" ../"$(PACKAGE)_$(CUR_VER).orig.tar.xz"
-
-.PHONY: override_dh_auto_test
