@@ -1,8 +1,8 @@
-eiskaltdcpp-unstable (2.2.8-20120703-203330-47a2f9e-0ppa1~quantal1) quantal; urgency=low
+eiskaltdcpp-unstable (2.2.8-20120704-205518-43bfa8c-0ppa1~quantal1) quantal; urgency=low
 
   * Minor update from GIT master branch.
 
- -- Boris Pek <tehnick-8@mail.ru>  Tue, 03 Jul 2012 20:33:54 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 04 Jul 2012 20:56:00 +0300
 
 eiskaltdcpp-unstable (2.0.0~svn35-1) karmic; urgency=low
 
