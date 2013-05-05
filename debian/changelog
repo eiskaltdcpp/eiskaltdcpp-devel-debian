@@ -1,8 +1,8 @@
-eiskaltdcpp-unstable (2.2.8-20130504-201710-ba4a4ce-0ppa1~raring1) raring; urgency=low
+eiskaltdcpp-unstable (2.2.8-20130506-000258-02f6757-0ppa1~raring1) raring; urgency=low
 
   * Minor update from Git master branch.
 
- -- Boris Pek <tehnick-8@mail.ru>  Sat, 04 May 2013 20:17:24 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 06 May 2013 00:03:29 +0300
 
 eiskaltdcpp-unstable (2.0.0~svn35-1) karmic; urgency=low
 
