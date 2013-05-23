@@ -1,8 +1,8 @@
-eiskaltdcpp-unstable (2.2.8-20130517-115754-5e47b88-0ppa1~saucy1) saucy; urgency=low
+eiskaltdcpp-unstable (2.2.8-20130523-093020-08d3626-0ppa1~saucy1) saucy; urgency=low
 
   * Minor update from Git master branch.
 
- -- Boris Pek <tehnick-8@mail.ru>  Fri, 17 May 2013 11:58:13 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Thu, 23 May 2013 09:30:38 +0300
 
 eiskaltdcpp-unstable (2.0.0~svn35-1) karmic; urgency=low
 
