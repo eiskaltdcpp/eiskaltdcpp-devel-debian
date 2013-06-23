@@ -104,11 +104,15 @@ Description: sound files for EiskaltDC++
  .
  (This is daily builds of the EiskaltDC++ packages)
 
-Package: libeiskaltdcpp2.2-unstable
+Package: libeiskaltdcpp2.3-unstable
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Replaces: libeiskaltdcpp2.2
-Conflicts: libeiskaltdcpp2.2
+Replaces: libeiskaltdcpp2.2,
+ libeiskaltdcpp2.2-unstable,
+ libeiskaltdcpp2.3
+Conflicts: libeiskaltdcpp2.2,
+ libeiskaltdcpp2.2-unstable,
+ libeiskaltdcpp2.3
 Description: DC++ kernel library from EiskaltDC++
  This package installs only DC++ kernel library which required EiskaltDC++.
  .
@@ -119,14 +123,18 @@ Description: DC++ kernel library from EiskaltDC++
  .
  (This is daily builds of the EiskaltDC++ packages)
 
-Package: libeiskaltdcpp2.2-unstable-dbg
+Package: libeiskaltdcpp2.3-unstable-dbg
 Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
- libeiskaltdcpp2.2-unstable (= ${binary:Version})
-Replaces: libeiskaltdcpp2.2-dbg
-Conflicts: libeiskaltdcpp2.2-dbg
+ libeiskaltdcpp2.3-unstable (= ${binary:Version})
+Replaces: libeiskaltdcpp2.2-dbg,
+ libeiskaltdcpp2.2-unstable-dbg,
+ libeiskaltdcpp2.3-dbg
+Conflicts: libeiskaltdcpp2.2-dbg,
+ libeiskaltdcpp2.2-unstable-dbg,
+ libeiskaltdcpp2.3-dbg
 Description: DC++ kernel from EiskaltDC++ (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ kernel library.
  .
@@ -141,7 +149,7 @@ Package: libeiskaltdcpp-dev-unstable
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
- libeiskaltdcpp2.2-unstable (= ${binary:Version})
+ libeiskaltdcpp2.3-unstable (= ${binary:Version})
 Replaces: libeiskaltdcpp-dev
 Conflicts: libeiskaltdcpp-dev
 Description: DC++ kernel from EiskaltDC++ (development files)
@@ -221,7 +229,7 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
  eiskaltdcpp-qt-unstable (= ${binary:Version}),
- libeiskaltdcpp2.2-unstable-dbg (= ${binary:Version})
+ libeiskaltdcpp2.3-unstable-dbg (= ${binary:Version})
 Replaces: eiskaltdcpp-qt-dbg
 Conflicts: eiskaltdcpp-qt-dbg
 Description: EiskaltDC++ GUI on Qt (debug symbols)
@@ -240,7 +248,7 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
  eiskaltdcpp-qt-mini-unstable (= ${binary:Version}),
- libeiskaltdcpp2.2-unstable-dbg (= ${binary:Version})
+ libeiskaltdcpp2.3-unstable-dbg (= ${binary:Version})
 Replaces: eiskaltdcpp-qt-mini-dbg
 Conflicts: eiskaltdcpp-qt-mini-dbg
 Description: EiskaltDC++ GUI on Qt (stripped-down version) (debug symbols)
@@ -319,7 +327,7 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
  eiskaltdcpp-gtk-unstable (= ${binary:Version}),
- libeiskaltdcpp2.2-unstable-dbg (= ${binary:Version})
+ libeiskaltdcpp2.3-unstable-dbg (= ${binary:Version})
 Replaces: eiskaltdcpp-gtk-dbg
 Conflicts: eiskaltdcpp-gtk-dbg
 Description: EiskaltDC++ GUI on Gtk (debug symbols)
@@ -338,7 +346,7 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
  eiskaltdcpp-gtk3-unstable (= ${binary:Version}),
- libeiskaltdcpp2.2-unstable-dbg (= ${binary:Version})
+ libeiskaltdcpp2.3-unstable-dbg (= ${binary:Version})
 Replaces: eiskaltdcpp-gtk-dbg
 Conflicts: eiskaltdcpp-gtk-dbg
 Description: EiskaltDC++ GUI on Gtk3 (debug symbols)
@@ -374,7 +382,7 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
  eiskaltdcpp-daemon-unstable (= ${binary:Version}),
- libeiskaltdcpp2.2-unstable-dbg (= ${binary:Version})
+ libeiskaltdcpp2.3-unstable-dbg (= ${binary:Version})
 Replaces: eiskaltdcpp-daemon-dbg
 Conflicts: eiskaltdcpp-daemon-dbg
 Description: EiskaltDC++ daemon (debug symbols)
