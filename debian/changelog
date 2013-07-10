@@ -1,8 +1,8 @@
-eiskaltdcpp-unstable (2.3.0-20130709-034326-3f58967-0ppa1~saucy1) saucy; urgency=low
+eiskaltdcpp-unstable (2.3.0-20130710-033459-2f71dfb-0ppa1~saucy1) saucy; urgency=low
 
   * Minor update from Git master branch.
 
- -- Boris Pek <tehnick@debian.org>  Tue, 09 Jul 2013 03:43:41 +0300
+ -- Boris Pek <tehnick@debian.org>  Wed, 10 Jul 2013 03:35:15 +0300
 
 eiskaltdcpp-unstable (2.0.0~svn35-1) karmic; urgency=low
 
