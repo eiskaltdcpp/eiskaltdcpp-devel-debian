@@ -1,7 +1,7 @@
 Source: eiskaltdcpp-unstable
 Section: net
 Priority: optional
-Maintainer: Boris Pek <tehnick-8@mail.ru>
+Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), po-debconf, autotools-dev,
  fakeroot, chrpath, pkg-config, cmake (>= 2.6.0),
  libqt4-dev (>=4.4.0), qt4-dev-tools (>=4.4.0), qt4-qtconfig (>=4.4.0),
