@@ -9,7 +9,7 @@ Build-Depends: debhelper (>= 7.0.50~), po-debconf, autotools-dev,
  libnotify-dev, liblua5.1-0-dev, libpcre3-dev,
  libboost-dev, libboost-system-dev,
  libbz2-dev, zlib1g-dev, libssl-dev, libaspell-dev,
- libidn11-dev, libattr1-dev
+ libminiupnpc-dev, libidn11-dev, libattr1-dev
 Homepage: http://code.google.com/p/eiskaltdc/
 Vcs-Git: git://github.com/tehnick/eiskaltdcpp-unstable-debian.git
 Vcs-Browser: https://github.com/tehnick/eiskaltdcpp-unstable-debian/tree/launchpad/debian
