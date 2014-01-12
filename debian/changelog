@@ -1,8 +1,8 @@
-eiskaltdcpp-unstable (2.3.0-20140111-154650-79fe1c8-0ppa1~trusty1) trusty; urgency=medium
+eiskaltdcpp-unstable (2.3.0-20140112-102448-ea260d5-0ppa1~trusty1) trusty; urgency=medium
 
   * Minor update from Git master branch.
 
- -- Boris Pek <tehnick@debian.org>  Sat, 11 Jan 2014 15:47:07 +0400
+ -- Boris Pek <tehnick@debian.org>  Sun, 12 Jan 2014 10:25:04 +0400
 
 eiskaltdcpp-unstable (2.0.0~svn35-1) karmic; urgency=low
 
