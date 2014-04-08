@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: autotools-dev,
                chrpath,
-               cmake (>= 2.6.0),
+               cmake,
                debhelper (>= 7.0.50~),
                fakeroot,
                libaspell-dev,
@@ -20,12 +20,12 @@ Build-Depends: autotools-dev,
                libminiupnpc-dev,
                libnotify-dev,
                libpcre3-dev,
-               libqt4-dev (>=4.4.0),
+               libqt4-dev,
                libssl-dev,
                pkg-config,
                po-debconf,
-               qt4-dev-tools (>=4.4.0),
-               qt4-qtconfig (>=4.4.0),
+               qt4-dev-tools,
+               qt4-qtconfig,
                zlib1g-dev
 Homepage: http://code.google.com/p/eiskaltdc/
 Vcs-Git: git://github.com/tehnick/eiskaltdcpp-unstable-debian.git
