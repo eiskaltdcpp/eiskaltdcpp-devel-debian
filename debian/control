@@ -5,7 +5,7 @@ Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: autotools-dev,
                chrpath,
                cmake,
-               debhelper (>= 7.0.50~),
+               debhelper (>= 9),
                fakeroot,
                libaspell-dev,
                libattr1-dev,
