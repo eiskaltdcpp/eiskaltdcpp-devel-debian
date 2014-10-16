@@ -1,3 +1,9 @@
+eiskaltdcpp-unstable (2.3.0-20141016-230938-5091323-0ppa1~utopic1) utopic; urgency=medium
+
+  * Minor update from Git master branch.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 16 Oct 2014 23:09:55 +0400
+
 eiskaltdcpp-unstable (2.3.0-20140428-001927-46d75bf-0ppa1~utopic1) utopic; urgency=medium
 
   * Minor update from Git master branch.
