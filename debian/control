@@ -26,7 +26,7 @@ Build-Depends: cmake,
 Homepage: https://github.com/eiskaltdcpp/eiskaltdcpp
 Vcs-Git: git://github.com/tehnick/eiskaltdcpp-debian.git
 Vcs-Browser: https://github.com/tehnick/eiskaltdcpp-debian/tree/launchpad/debian
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 
 Package: eiskaltdcpp
 Section: metapackages
