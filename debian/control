@@ -1,12 +1,9 @@
-Source: eiskaltdcpp-unstable
+Source: eiskaltdcpp-devel
 Section: net
 Priority: optional
 Maintainer: Boris Pek <tehnick@debian.org>
-Build-Depends: autotools-dev,
-               chrpath,
-               cmake,
+Build-Depends: cmake,
                debhelper (>= 9),
-               fakeroot,
                libaspell-dev,
                libattr1-dev,
                libboost-dev,
@@ -25,26 +22,23 @@ Build-Depends: autotools-dev,
                pkg-config,
                po-debconf,
                qt4-dev-tools,
-               qt4-qtconfig,
                zlib1g-dev
-Homepage: http://code.google.com/p/eiskaltdc/
-Vcs-Git: git://github.com/tehnick/eiskaltdcpp-unstable-debian.git
-Vcs-Browser: https://github.com/tehnick/eiskaltdcpp-unstable-debian/tree/launchpad/debian
+Homepage: https://github.com/eiskaltdcpp/eiskaltdcpp
+Vcs-Git: git://github.com/tehnick/eiskaltdcpp-debian.git
+Vcs-Browser: https://github.com/tehnick/eiskaltdcpp-debian/tree/launchpad/debian
 Standards-Version: 3.9.5
 
-Package: eiskaltdcpp-unstable
+Package: eiskaltdcpp
 Section: metapackages
 Architecture: all
-Depends: eiskaltdcpp-emoticons-unstable,
-         eiskaltdcpp-qt-unstable (>= ${binary:Version}) |
- eiskaltdcpp-qt-mini-unstable (>= ${binary:Version}) |
- eiskaltdcpp-gtk-unstable (>= ${binary:Version}) |
- eiskaltdcpp-gtk3-unstable (>= ${binary:Version}),
-         eiskaltdcpp-scripts-unstable,
-         eiskaltdcpp-sounds-unstable,
+Depends: eiskaltdcpp-emoticons,
+         eiskaltdcpp-qt (>= ${binary:Version}) |
+            eiskaltdcpp-qt-mini (>= ${binary:Version}) |
+            eiskaltdcpp-gtk (>= ${binary:Version}) |
+            eiskaltdcpp-gtk3 (>= ${binary:Version}),
+         eiskaltdcpp-scripts,
+         eiskaltdcpp-sounds,
          ${misc:Depends}
-Replaces: eiskaltdcpp
-Conflicts: eiskaltdcpp
 Description: EiskaltDC++ meta-package
  This package installs the most popular and recommended combination of
  EiskaltDC++ related packages.
@@ -54,14 +48,11 @@ Description: EiskaltDC++ meta-package
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-common-unstable
+Package: eiskaltdcpp-common
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: eiskaltdcpp-common
-Conflicts: eiskaltdcpp-common
-Breaks: eiskaltdcpp (<< 2.1.0)
 Description: common files for EiskaltDC++
  This package contains the common files for the different EiskaltDC++ versions.
  .
@@ -70,14 +61,12 @@ Description: common files for EiskaltDC++
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-emoticons-unstable
+Package: eiskaltdcpp-emoticons
 Architecture: all
 Depends: ${misc:Depends}
 Suggests: php5-cli
-Replaces: eiskaltdcpp-emoticons
-Conflicts: eiskaltdcpp-emoticons
 Description: emoticons for EiskaltDC++
  This package contains the emoticon packs for EiskaltDC++.
  .
@@ -86,15 +75,12 @@ Description: emoticons for EiskaltDC++
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-scripts-unstable
+Package: eiskaltdcpp-scripts
 Architecture: all
 Depends: ${misc:Depends}
 Suggests: php5-cli
-Replaces: eiskaltdcpp-scripts
-Conflicts: eiskaltdcpp-scripts
-Breaks: eiskaltdcpp (<< 2.1.0)
 Description: scripts examples for EiskaltDC++
  This package contains the scripts examples for EiskaltDC++.
  It used by /sh and /alias chat commands (see man-page or /help in chat).
@@ -104,13 +90,11 @@ Description: scripts examples for EiskaltDC++
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-sounds-unstable
+Package: eiskaltdcpp-sounds
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: eiskaltdcpp-sounds
-Conflicts: eiskaltdcpp-sounds
 Description: sound files for EiskaltDC++
  This package contains the sound files for EiskaltDC++.
  .
@@ -119,13 +103,11 @@ Description: sound files for EiskaltDC++
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: libeiskaltdcpp2.3-unstable
+Package: libeiskaltdcpp2.3
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Replaces: libeiskaltdcpp2.2, libeiskaltdcpp2.2-unstable, libeiskaltdcpp2.3
-Conflicts: libeiskaltdcpp2.2, libeiskaltdcpp2.2-unstable, libeiskaltdcpp2.3
 Description: DC++ kernel library from EiskaltDC++
  This package installs only DC++ kernel library which required EiskaltDC++.
  .
@@ -134,19 +116,13 @@ Description: DC++ kernel library from EiskaltDC++
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: libeiskaltdcpp2.3-unstable-dbg
+Package: libeiskaltdcpp2.3-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: libeiskaltdcpp2.3-unstable (= ${binary:Version}), ${misc:Depends}
-Replaces: libeiskaltdcpp2.2-dbg,
-          libeiskaltdcpp2.2-unstable-dbg,
-          libeiskaltdcpp2.3-dbg
-Conflicts: libeiskaltdcpp2.2-dbg,
-           libeiskaltdcpp2.2-unstable-dbg,
-           libeiskaltdcpp2.3-dbg
+Depends: libeiskaltdcpp2.3 (= ${binary:Version}), ${misc:Depends}
 Description: DC++ kernel from EiskaltDC++ (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ kernel library.
  .
@@ -155,14 +131,12 @@ Description: DC++ kernel from EiskaltDC++ (debug symbols)
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: libeiskaltdcpp-dev-unstable
+Package: libeiskaltdcpp-dev
 Section: libdevel
 Architecture: any
-Depends: libeiskaltdcpp2.3-unstable (= ${binary:Version}), ${misc:Depends}
-Replaces: libeiskaltdcpp-dev
-Conflicts: libeiskaltdcpp-dev
+Depends: libeiskaltdcpp2.3 (= ${binary:Version}), ${misc:Depends}
 Description: DC++ kernel from EiskaltDC++ (development files)
  This package contains header files for EiskaltDC++ kernel library.
  .
@@ -171,12 +145,12 @@ Description: DC++ kernel from EiskaltDC++ (development files)
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-qt-unstable
+Package: eiskaltdcpp-qt
 Architecture: any
-Depends: eiskaltdcpp-common-unstable,
-         eiskaltdcpp-qt-data-unstable (= ${source:Version}),
+Depends: eiskaltdcpp-common,
+         eiskaltdcpp-qt-data (= ${source:Version}),
          libqt4-sql-sqlite,
          ${misc:Depends},
          ${shlibs:Depends}
@@ -184,9 +158,6 @@ Recommends: libqtscript4-core,
             libqtscript4-gui,
             libqtscript4-network,
             libqtscript4-xml
-Replaces: eiskaltdcpp (<< 2.1.0), eiskaltdcpp-qt
-Conflicts: eiskaltdcpp-qt
-Breaks: eiskaltdcpp (<< 2.1.0)
 Description: EiskaltDC++ GUI on Qt
  This package installs only EiskaltDC++ with GUI based on Qt.
  .
@@ -195,16 +166,14 @@ Description: EiskaltDC++ GUI on Qt
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-qt-mini-unstable
+Package: eiskaltdcpp-qt-mini
 Architecture: any
-Depends: eiskaltdcpp-common-unstable,
-         eiskaltdcpp-qt-data-unstable (= ${source:Version}),
+Depends: eiskaltdcpp-common,
+         eiskaltdcpp-qt-data (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Replaces: eiskaltdcpp-qt-mini
-Conflicts: eiskaltdcpp-qt-mini
 Description: EiskaltDC++ GUI on Qt (stripped-down version)
  This package installs only EiskaltDC++ with GUI based on Qt. This is
  stripped-down version of program. Such features were disabled:
@@ -217,17 +186,14 @@ Description: EiskaltDC++ GUI on Qt (stripped-down version)
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-qt-data-unstable
+Package: eiskaltdcpp-qt-data
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: eiskaltdcpp-qt-data
-Conflicts: eiskaltdcpp-qt-data
-Breaks: eiskaltdcpp (<< 2.1.0)
-Suggests: eiskaltdcpp-emoticons-unstable,
-          eiskaltdcpp-scripts-unstable,
-          eiskaltdcpp-sounds-unstable,
+Suggests: eiskaltdcpp-emoticons,
+          eiskaltdcpp-scripts,
+          eiskaltdcpp-sounds,
           php5-cli
 Description: data files for EiskaltDC++ Qt
  This package contains the data files for EiskaltDC++ Qt.
@@ -237,17 +203,15 @@ Description: data files for EiskaltDC++ Qt
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-qt-unstable-dbg
+Package: eiskaltdcpp-qt-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: eiskaltdcpp-qt-unstable (= ${binary:Version}),
-         libeiskaltdcpp2.3-unstable-dbg (= ${binary:Version}),
+Depends: eiskaltdcpp-qt (= ${binary:Version}),
+         libeiskaltdcpp2.3-dbg (= ${binary:Version}),
          ${misc:Depends}
-Replaces: eiskaltdcpp-qt-dbg
-Conflicts: eiskaltdcpp-qt-dbg
 Description: EiskaltDC++ GUI on Qt (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ Qt.
  .
@@ -256,17 +220,15 @@ Description: EiskaltDC++ GUI on Qt (debug symbols)
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-qt-mini-unstable-dbg
+Package: eiskaltdcpp-qt-mini-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: eiskaltdcpp-qt-mini-unstable (= ${binary:Version}),
-         libeiskaltdcpp2.3-unstable-dbg (= ${binary:Version}),
+Depends: eiskaltdcpp-qt-mini (= ${binary:Version}),
+         libeiskaltdcpp2.3-dbg (= ${binary:Version}),
          ${misc:Depends}
-Replaces: eiskaltdcpp-qt-mini-dbg
-Conflicts: eiskaltdcpp-qt-mini-dbg
 Description: EiskaltDC++ GUI on Qt (stripped-down version) (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ Qt. This is
  stripped-down version of program. Such features were disabled:
@@ -279,16 +241,14 @@ Description: EiskaltDC++ GUI on Qt (stripped-down version) (debug symbols)
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-gtk-unstable
+Package: eiskaltdcpp-gtk
 Architecture: any
-Depends: eiskaltdcpp-common-unstable,
-         eiskaltdcpp-gtk-data-unstable (= ${source:Version}),
+Depends: eiskaltdcpp-common,
+         eiskaltdcpp-gtk-data (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Replaces: eiskaltdcpp-gtk
-Conflicts: eiskaltdcpp-gtk
 Description: EiskaltDC++ GUI on Gtk
  This package installs only EiskaltDC++ with GUI based on Gtk
  (based on FreeDC++ and LinuxDC++).
@@ -298,36 +258,32 @@ Description: EiskaltDC++ GUI on Gtk
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-gtk3-unstable
+Package: eiskaltdcpp-gtk3
 Architecture: any
-Depends: eiskaltdcpp-common-unstable,
-         eiskaltdcpp-gtk-data-unstable (= ${source:Version}),
+Depends: eiskaltdcpp-common,
+         eiskaltdcpp-gtk-data (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Replaces: eiskaltdcpp-gtk3
-Conflicts: eiskaltdcpp-gtk3
 Description: EiskaltDC++ GUI on Gtk3
  This package installs only EiskaltDC++ with GUI based on Gtk3. This is an
  experimental mode of GUI. If you have some problems use Gtk2 based UI instead
- (package eiskaltdcpp-gtk-unstable).
+ (package eiskaltdcpp-gtk).
  .
  EiskaltDC++ is a cross-platform program that uses the Direct Connect and ADC
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-gtk-data-unstable
+Package: eiskaltdcpp-gtk-data
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: eiskaltdcpp-gtk-data
-Conflicts: eiskaltdcpp-gtk-data
-Suggests: eiskaltdcpp-emoticons-unstable,
-          eiskaltdcpp-scripts-unstable,
-          eiskaltdcpp-sounds-unstable,
+Suggests: eiskaltdcpp-emoticons,
+          eiskaltdcpp-scripts,
+          eiskaltdcpp-sounds,
           php5-cli
 Description: data files for EiskaltDC++ Gtk
  This package contains the data files for EiskaltDC++ Gtk.
@@ -337,17 +293,15 @@ Description: data files for EiskaltDC++ Gtk
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-gtk-unstable-dbg
+Package: eiskaltdcpp-gtk-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: eiskaltdcpp-gtk-unstable (= ${binary:Version}),
-         libeiskaltdcpp2.3-unstable-dbg (= ${binary:Version}),
+Depends: eiskaltdcpp-gtk (= ${binary:Version}),
+         libeiskaltdcpp2.3-dbg (= ${binary:Version}),
          ${misc:Depends}
-Replaces: eiskaltdcpp-gtk-dbg
-Conflicts: eiskaltdcpp-gtk-dbg
 Description: EiskaltDC++ GUI on Gtk (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ Gtk.
  .
@@ -356,17 +310,15 @@ Description: EiskaltDC++ GUI on Gtk (debug symbols)
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-gtk3-unstable-dbg
+Package: eiskaltdcpp-gtk3-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: eiskaltdcpp-gtk3-unstable (= ${binary:Version}),
-         libeiskaltdcpp2.3-unstable-dbg (= ${binary:Version}),
+Depends: eiskaltdcpp-gtk3 (= ${binary:Version}),
+         libeiskaltdcpp2.3-dbg (= ${binary:Version}),
          ${misc:Depends}
-Replaces: eiskaltdcpp-gtk-dbg
-Conflicts: eiskaltdcpp-gtk-dbg
 Description: EiskaltDC++ GUI on Gtk3 (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ Gtk3.
  .
@@ -375,14 +327,12 @@ Description: EiskaltDC++ GUI on Gtk3 (debug symbols)
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-daemon-unstable
+Package: eiskaltdcpp-daemon
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Replaces: eiskaltdcpp-daemon
-Conflicts: eiskaltdcpp-daemon
-Suggests: eiskaltdcpp-cli-unstable
+Suggests: eiskaltdcpp-cli
 Description: EiskaltDC++ daemon
  This package installs only EiskaltDC++ daemon (without any GUI).
  Support of control via JSON-RPC is enabled.
@@ -392,17 +342,15 @@ Description: EiskaltDC++ daemon
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-daemon-unstable-dbg
+Package: eiskaltdcpp-daemon-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: eiskaltdcpp-daemon-unstable (= ${binary:Version}),
-         libeiskaltdcpp2.3-unstable-dbg (= ${binary:Version}),
+Depends: eiskaltdcpp-daemon (= ${binary:Version}),
+         libeiskaltdcpp2.3-dbg (= ${binary:Version}),
          ${misc:Depends}
-Replaces: eiskaltdcpp-daemon-dbg
-Conflicts: eiskaltdcpp-daemon-dbg
 Description: EiskaltDC++ daemon (debug symbols)
  This package contains the debugging symbols for EiskaltDC++ daemon.
  .
@@ -411,9 +359,9 @@ Description: EiskaltDC++ daemon (debug symbols)
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
 
-Package: eiskaltdcpp-cli-unstable
+Package: eiskaltdcpp-cli
 Architecture: all
 Depends: libdata-dump-perl,
          libgetopt-long-descriptive-perl,
@@ -421,9 +369,7 @@ Depends: libdata-dump-perl,
          libterm-shellui-perl,
          ${misc:Depends},
          ${perl:Depends}
-Replaces: eiskaltdcpp-cli
-Conflicts: eiskaltdcpp-cli
-Suggests: eiskaltdcpp-daemon-unstable
+Suggests: eiskaltdcpp-daemon
 Description: EiskaltDC++ command-line interface
  This package installs EiskaltDC++ CLI (command-line interface) written in perl.
  This program is to control eiskaltdcpp-daemon via JSON-RPC protocol.
@@ -433,4 +379,4 @@ Description: EiskaltDC++ command-line interface
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
  .
- (This is daily builds of the EiskaltDC++ packages)
+ (Daily builds for EiskaltDC++ project)
