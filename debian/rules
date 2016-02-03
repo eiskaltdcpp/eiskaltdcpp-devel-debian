@@ -104,26 +104,26 @@ override_dh_installchangelogs:
 
 .PHONY: override_dh_strip
 override_dh_strip:
-	dh_strip -Nlibeiskaltdcpp2.3-unstable \
-			-Neiskaltdcpp-qt-unstable \
-			-Neiskaltdcpp-qt-mini-unstable \
-			-Neiskaltdcpp-gtk-unstable \
-			-Neiskaltdcpp-gtk3-unstable \
-			-Neiskaltdcpp-daemon-unstable
-	dh_strip -plibeiskaltdcpp2.3-unstable --dbg-package=libeiskaltdcpp2.3-unstable-dbg
-	dh_strip -peiskaltdcpp-qt-unstable --dbg-package=eiskaltdcpp-qt-unstable-dbg
-	dh_strip -peiskaltdcpp-qt-mini-unstable --dbg-package=eiskaltdcpp-qt-mini-unstable-dbg
-	dh_strip -peiskaltdcpp-gtk-unstable --dbg-package=eiskaltdcpp-gtk-unstable-dbg
-	dh_strip -peiskaltdcpp-gtk3-unstable --dbg-package=eiskaltdcpp-gtk3-unstable-dbg
-	dh_strip -peiskaltdcpp-daemon-unstable --dbg-package=eiskaltdcpp-daemon-unstable-dbg
+	dh_strip -Nlibeiskaltdcpp2.3 \
+			-Neiskaltdcpp-qt \
+			-Neiskaltdcpp-qt-mini \
+			-Neiskaltdcpp-gtk \
+			-Neiskaltdcpp-gtk3 \
+			-Neiskaltdcpp-daemon
+	dh_strip -plibeiskaltdcpp2.3 --dbg-package=libeiskaltdcpp2.3-dbg
+	dh_strip -peiskaltdcpp-qt --dbg-package=eiskaltdcpp-qt-dbg
+	dh_strip -peiskaltdcpp-qt-mini --dbg-package=eiskaltdcpp-qt-mini-dbg
+	dh_strip -peiskaltdcpp-gtk --dbg-package=eiskaltdcpp-gtk-dbg
+	dh_strip -peiskaltdcpp-gtk3 --dbg-package=eiskaltdcpp-gtk3-dbg
+	dh_strip -peiskaltdcpp-daemon --dbg-package=eiskaltdcpp-daemon-dbg
 
 .PHONY: override_dh_makeshlibs
 override_dh_makeshlibs:
-	dh_makeshlibs -V -plibeiskaltdcpp2.3-unstable
+	dh_makeshlibs -V -plibeiskaltdcpp2.3
 
 .PHONY: override_dh_shlibdeps
 override_dh_shlibdeps:
-	dh_shlibdeps -a -ldebian/libeiskaltdcpp2.3-unstable/usr/lib
+	dh_shlibdeps -a -ldebian/libeiskaltdcpp2.3/usr/lib
 
 get-orig-source:
 	wget -c "$(CUR_URL)" -O "$(PACKAGE)_$(CUR_VER).orig.tar.xz"

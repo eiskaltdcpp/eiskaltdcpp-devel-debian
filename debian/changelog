@@ -1,22 +1,22 @@
-eiskaltdcpp-unstable (2.3.0-20141028-002031-3141373-0ppa1~utopic1) utopic; urgency=medium
+eiskaltdcpp-devel (2.3.0-20141028-002031-3141373-0ppa1~utopic1) utopic; urgency=medium
 
   * Minor update from Git master branch.
 
  -- Boris Pek <tehnick@debian.org>  Tue, 28 Oct 2014 00:20:46 +0300
 
-eiskaltdcpp-unstable (2.3.0-20141016-230938-5091323-0ppa1~utopic1) utopic; urgency=medium
+eiskaltdcpp-devel (2.3.0-20141016-230938-5091323-0ppa1~utopic1) utopic; urgency=medium
 
   * Minor update from Git master branch.
 
  -- Boris Pek <tehnick@debian.org>  Thu, 16 Oct 2014 23:09:55 +0400
 
-eiskaltdcpp-unstable (2.3.0-20140428-001927-46d75bf-0ppa1~utopic1) utopic; urgency=medium
+eiskaltdcpp-devel (2.3.0-20140428-001927-46d75bf-0ppa1~utopic1) utopic; urgency=medium
 
   * Minor update from Git master branch.
 
  -- Boris Pek <tehnick@debian.org>  Mon, 28 Apr 2014 00:19:43 +0400
 
-eiskaltdcpp-unstable (2.0.0~svn35-1) karmic; urgency=low
+eiskaltdcpp-devel (2.0.0~svn35-1) karmic; urgency=low
 
   * Initial release.
 
