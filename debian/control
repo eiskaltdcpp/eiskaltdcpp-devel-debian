@@ -47,8 +47,6 @@ Description: EiskaltDC++ meta-package
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-common
 Architecture: all
@@ -60,8 +58,6 @@ Description: common files for EiskaltDC++
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-emoticons
 Architecture: all
@@ -74,8 +70,6 @@ Description: emoticons for EiskaltDC++
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-scripts
 Architecture: all
@@ -89,8 +83,6 @@ Description: scripts examples for EiskaltDC++
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-sounds
 Architecture: all
@@ -102,8 +94,6 @@ Description: sound files for EiskaltDC++
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: libeiskaltdcpp2.3
 Architecture: any
@@ -115,8 +105,6 @@ Description: DC++ kernel library from EiskaltDC++
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: libeiskaltdcpp2.3-dbg
 Section: debug
@@ -130,8 +118,6 @@ Description: DC++ kernel from EiskaltDC++ (debug symbols)
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: libeiskaltdcpp-dev
 Section: libdevel
@@ -144,8 +130,6 @@ Description: DC++ kernel from EiskaltDC++ (development files)
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-qt
 Architecture: any
@@ -165,8 +149,6 @@ Description: EiskaltDC++ GUI on Qt
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-qt-mini
 Architecture: any
@@ -185,8 +167,6 @@ Description: EiskaltDC++ GUI on Qt (stripped-down version)
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-qt-data
 Architecture: all
@@ -202,8 +182,6 @@ Description: data files for EiskaltDC++ Qt
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-qt-dbg
 Section: debug
@@ -219,8 +197,6 @@ Description: EiskaltDC++ GUI on Qt (debug symbols)
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-qt-mini-dbg
 Section: debug
@@ -240,8 +216,6 @@ Description: EiskaltDC++ GUI on Qt (stripped-down version) (debug symbols)
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-gtk
 Architecture: any
@@ -257,8 +231,6 @@ Description: EiskaltDC++ GUI on Gtk
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-gtk3
 Architecture: any
@@ -275,8 +247,6 @@ Description: EiskaltDC++ GUI on Gtk3
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-gtk-data
 Architecture: all
@@ -292,8 +262,6 @@ Description: data files for EiskaltDC++ Gtk
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-gtk-dbg
 Section: debug
@@ -309,8 +277,6 @@ Description: EiskaltDC++ GUI on Gtk (debug symbols)
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-gtk3-dbg
 Section: debug
@@ -326,8 +292,6 @@ Description: EiskaltDC++ GUI on Gtk3 (debug symbols)
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-daemon
 Architecture: any
@@ -341,8 +305,6 @@ Description: EiskaltDC++ daemon
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-daemon-dbg
 Section: debug
@@ -358,8 +320,6 @@ Description: EiskaltDC++ daemon (debug symbols)
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
 
 Package: eiskaltdcpp-cli
 Architecture: all
@@ -378,5 +338,3 @@ Description: EiskaltDC++ command-line interface
  protocols. It is compatible with other DC clients, such as the original DC
  from Neomodus, DC++ and derivatives. EiskaltDC++ also interoperates with all
  common DC hub software.
- .
- (Daily builds for EiskaltDC++ project)
