@@ -20,10 +20,8 @@ Build-Depends: cmake,
                libssl-dev,
                pkg-config,
                po-debconf,
-               qt5-default,
                qtbase5-dev,
                qtmultimedia5-dev,
-               qtquickcontrols2-5-dev | qtquick1-5-dev,
                qtscript5-dev,
                qttools5-dev,
                qttools5-dev-tools,
@@ -72,7 +70,7 @@ Description: emoticons for EiskaltDC++
 Package: eiskaltdcpp-scripts
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: php5-cli
+Recommends: php-cli
 Description: scripts examples for EiskaltDC++
  This package contains the scripts examples for EiskaltDC++.
  It used by /sh and /alias chat commands (see man-page or /help in chat).
@@ -134,7 +132,7 @@ Depends: ${misc:Depends}
 Suggests: eiskaltdcpp-emoticons,
           eiskaltdcpp-scripts,
           eiskaltdcpp-sounds,
-          php5-cli
+          php-cli
 Description: data files for EiskaltDC++ Qt
  This package contains the data files for EiskaltDC++ Qt.
  .
@@ -162,7 +160,7 @@ Depends: ${misc:Depends}
 Suggests: eiskaltdcpp-emoticons,
           eiskaltdcpp-scripts,
           eiskaltdcpp-sounds,
-          php5-cli
+          php-cli
 Description: data files for EiskaltDC++ Gtk
  This package contains the data files for EiskaltDC++ Gtk.
  .

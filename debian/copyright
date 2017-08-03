@@ -63,7 +63,7 @@ Copyright: 2001-2012 Jacek Sieka <arnetheduck@gmail.com>
            2003-2006 RevConnect (http://www.revconnect.com)
            1997 Makoto Matsumoto and Takuji Nishimura <matumoto@math.keio.ac.jp>
            2010 cologic <ne5@parsoma.net>
-           2010 ggrundik (http://code.google.com/u/ggrundik/)
+           2010 ggrundik
            2010 Gennady Proskurin (https://launchpad.net/~gpr)
            2011 Eugene Petrov <dhamp@ya.ru>
 License: GPL-2+
@@ -75,7 +75,7 @@ License: GPL-3+
 Files: data/examples/xmms2_audacious2.ru_RU.UTF-8.php
        data/examples/commands.ru_RU.UTF-8.php
        eiskaltdcpp-qt/qtscripts/gnome/commands.ru_RU.UTF-8.php
-       eiskaltdcpp-qt/qtscripts/qmpp_nowplaying/qmmp.sh
+       eiskaltdcpp-qt/qtscripts/qmmp_nowplaying/qmmp.sh
 Copyright: 2010 nE0sIghT
            2010 GoTLiuM InSPiRiT <gotlium@gmail.com>
            2012 Gustavo Alvarez <sl1pkn07@gmail.com>
