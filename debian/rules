@@ -41,7 +41,7 @@ CMAKEOPTS = -DUSE_MINIUPNP=ON \
 
 # This option is for daily builds of the EiskaltDC++ packages on Launchpad
 # See https://launchpad.net/~tehnick/+archive/tehnick for more information
-REVISION = $(shell /bin/sh -c "head -n 1 debian/changelog | sed -e 's/^.*-[0-9]\+-g\(.*\)-0ppa.*$/\1/'")
+REVISION = $(shell /bin/sh -c "head -n 1 debian/changelog | sed -e 's/^.*-[0-9]\+-g\(.*\)-0ppa.*$$/\1/'")
 CMAKEOPTS += -DDCPP_REVISION="$(REVISION)"
 
 
