@@ -50,6 +50,7 @@ Description: EiskaltDC++ metapackage
 Package: eiskaltdcpp-common
 Architecture: all
 Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: common files for EiskaltDC++
  This package contains the common files for the different EiskaltDC++ versions.
  .
@@ -60,6 +61,7 @@ Description: common files for EiskaltDC++
 Package: eiskaltdcpp-emoticons
 Architecture: all
 Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: emoticons for EiskaltDC++
  This package contains the emoticon packs for EiskaltDC++.
  .
@@ -71,6 +73,7 @@ Package: eiskaltdcpp-scripts
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: php-cli
+Multi-Arch: foreign
 Description: scripts examples for EiskaltDC++
  This package contains the scripts examples for EiskaltDC++.
  It used by /sh and /alias chat commands (see man-page or /help in chat).
@@ -82,6 +85,7 @@ Description: scripts examples for EiskaltDC++
 Package: eiskaltdcpp-sounds
 Architecture: all
 Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: sound files for EiskaltDC++
  This package contains the sound files for EiskaltDC++.
  .
@@ -103,6 +107,7 @@ Package: libeiskaltdcpp-dev
 Section: libdevel
 Architecture: any
 Depends: libeiskaltdcpp2.3 (= ${binary:Version}), ${misc:Depends}
+Multi-Arch: same
 Description: DC++ kernel from EiskaltDC++ (development files)
  This package contains header files for EiskaltDC++ kernel library.
  .
@@ -133,6 +138,7 @@ Suggests: eiskaltdcpp-emoticons,
           eiskaltdcpp-scripts,
           eiskaltdcpp-sounds,
           php-cli
+Multi-Arch: foreign
 Description: data files for EiskaltDC++ Qt
  This package contains the data files for EiskaltDC++ Qt.
  .
@@ -161,6 +167,7 @@ Suggests: eiskaltdcpp-emoticons,
           eiskaltdcpp-scripts,
           eiskaltdcpp-sounds,
           php-cli
+Multi-Arch: foreign
 Description: data files for EiskaltDC++ Gtk
  This package contains the data files for EiskaltDC++ Gtk.
  .
