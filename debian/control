@@ -93,7 +93,7 @@ Description: sound files for EiskaltDC++
  protocols. It is compatible with DC++, FlylinkDC++, LinuxDC++ and other DC
  clients. EiskaltDC++ also interoperates with all common DC hub software.
 
-Package: libeiskaltdcpp2.3
+Package: libeiskaltdcpp2.4
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: DC++ kernel library from EiskaltDC++
@@ -106,7 +106,7 @@ Description: DC++ kernel library from EiskaltDC++
 Package: libeiskaltdcpp-dev
 Section: libdevel
 Architecture: any
-Depends: libeiskaltdcpp2.3 (= ${binary:Version}), ${misc:Depends}
+Depends: libeiskaltdcpp2.4 (= ${binary:Version}), ${misc:Depends}
 Multi-Arch: same
 Description: DC++ kernel from EiskaltDC++ (development files)
  This package contains header files for EiskaltDC++ kernel library.
