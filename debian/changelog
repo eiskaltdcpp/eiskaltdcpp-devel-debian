@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.2.10-176-g516a4492-0ppa1~artful1) artful; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Sun, 08 Oct 2017 00:20:21 +0300
+
 eiskaltdcpp-devel (2.2.10-168-ga6849b6f-0ppa1~artful1) artful; urgency=medium
 
   * New Git snapshot.
