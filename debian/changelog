@@ -51,7 +51,7 @@ eiskaltdcpp (2.2.9-4) unstable; urgency=medium
     - delete outdated packages from Replaces, Conflicts and Breaks
     - fix descriptions of eiskaltdcpp-gtk3 binary package
       (it suggested nonexistent package) (Closes: #749774)
-    - update long decription of all binary packages
+    - update long description of all binary packages
     - fix lintian warning vcs-field-uses-insecure-uri
     - fix lintian tag capitalization-error-in-description-synopsis
       meta-package metapackage
