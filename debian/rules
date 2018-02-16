@@ -1,4 +1,5 @@
 #!/usr/bin/make -f
+include /usr/share/dpkg/pkg-info.mk
 
 PACKAGE = eiskaltdcpp
 
@@ -37,13 +38,8 @@ CMAKEOPTS = -DUSE_MINIUPNP=ON \
             -DXMLRPC_DAEMON=OFF \
             -DJSONRPC_DAEMON=ON \
             -DUSE_CLI_JSONRPC=ON \
-            -DWITH_DEV_FILES=ON
-
-
-# This option is for daily builds of the EiskaltDC++ packages on Launchpad
-# See: https://launchpad.net/~tehnick/+archive/ubuntu/direct-connect-devel
-include /usr/share/dpkg/pkg-info.mk
-CMAKEOPTS += -DREPLACE_VERSION="$(DEB_VERSION_UPSTREAM)"
+            -DWITH_DEV_FILES=ON \
+            -DREPLACE_VERSION="$(DEB_VERSION_UPSTREAM)"
 
 
 %:
