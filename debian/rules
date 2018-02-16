@@ -42,8 +42,8 @@ CMAKEOPTS = -DUSE_MINIUPNP=ON \
 
 # This option is for daily builds of the EiskaltDC++ packages on Launchpad
 # See: https://launchpad.net/~tehnick/+archive/ubuntu/direct-connect-devel
-DEB_UPSTREAM_VERSION ?= $(shell dpkg-parsechangelog | sed -rne 's/^Version: ([0-9]+.*)-0ppa.*$$/\1/p')
-CMAKEOPTS += -DREPLACE_VERSION="$(DEB_UPSTREAM_VERSION)"
+include /usr/share/dpkg/pkg-info.mk
+CMAKEOPTS += -DREPLACE_VERSION="$(DEB_VERSION_UPSTREAM)"
 
 
 %:
