@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.2.10-186-g1c0173ec-0ppa1~bionic1) bionic; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Sat, 17 Feb 2018 03:22:09 +0300
+
 eiskaltdcpp-devel (2.2.10-185-g43fdded5-0ppa1~bionic1) bionic; urgency=medium
 
   * New Git snapshot.
