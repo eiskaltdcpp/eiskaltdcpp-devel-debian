@@ -97,6 +97,8 @@ Package: libeiskaltdcpp2.4
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Replaces: libeiskaltdcpp2.2
+Breaks: libeiskaltdcpp2.2
 Multi-Arch: no
 Description: DC++ kernel library from EiskaltDC++
  This package installs only DC++ kernel library which required EiskaltDC++.
