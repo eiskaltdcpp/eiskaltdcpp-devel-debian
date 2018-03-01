@@ -1,52 +1,103 @@
-eiskaltdcpp-devel (2.2.10-186-g1c0173ec-0ppa1~bionic1) bionic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 17 Feb 2018 03:22:09 +0300
-
-eiskaltdcpp-devel (2.2.10-185-g43fdded5-0ppa1~bionic1) bionic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 17 Feb 2018 02:51:29 +0300
-
-eiskaltdcpp-devel (2.2.10-180-g4c9cbf20-0ppa1~artful1) artful; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 10 Oct 2017 02:42:42 +0300
-
-eiskaltdcpp-devel (2.2.10-176-g516a4492-0ppa1~artful1) artful; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 08 Oct 2017 00:20:21 +0300
-
-eiskaltdcpp-devel (2.2.10-168-ga6849b6f-0ppa1~artful1) artful; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 05 Oct 2017 01:34:02 +0300
-
-eiskaltdcpp-devel (2.2.10-167-geca99308-0ppa2~artful1) artful; urgency=medium
-
-  * Some fixes in package.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 04 Aug 2017 02:57:39 +0300
-
-eiskaltdcpp-devel (2.2.10-167-geca99308-0ppa1~artful1) artful; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 04 Aug 2017 02:24:18 +0300
-
-eiskaltdcpp-devel (2.2.10-164-gc542f358-0ppa1~artful1) artful; urgency=medium
+eiskaltdcpp-devel (2.2.10-188-g1e72256a-0ppa1~bionic1) bionic; urgency=medium
 
   * New Git snapshot.
   * Sync with stable package eiskaltdcpp.
   * Clean changelog.
 
- -- Boris Pek <tehnick@debian.org>  Thu, 03 Aug 2017 19:59:57 +0300
+ -- Boris Pek <tehnick@debian.org>  Fri, 02 Mar 2018 01:23:00 +0300
+
+eiskaltdcpp (2.2.10+186+g1c0173ec-2) unstable; urgency=medium
+
+  * Move to unstable: no changes required.
+  * Package libeiskaltdcpp2.4 now Breaks and Replaces package
+    libeiskaltdcpp2.2. (Closes: #891006)
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 27 Feb 2018 01:34:29 +0300
+
+eiskaltdcpp (2.2.10+186+g1c0173ec-1) experimental; urgency=medium
+
+  * New Git snapshot. (Closes: #864977)
+  * Build with Qt5. (Closes: #874872)
+  * Delete all patches: already in upstream.
+  * Update debian/control:
+    - delete build dependencies from libqt4-dev and qt4-dev-tools
+    - add build dependencies from libqt5xmlpatterns5-dev, qtbase5-dev,
+      qtmultimedia5-dev, qtscript5-dev, qttools5-dev and qttools5-dev-tools
+    - rename package libeiskaltdcpp2.2 to libeiskaltdcpp2.4 to reflect change
+      of SOVERSION
+    - binary package eiskaltdcpp-qt now depends from libqt5sql5-sqlite instead
+      of libqt4-sql-sqlite
+    - binary package eiskaltdcpp-qt now recommends libqt5script5 and
+      libqt5scripttools5 instead of libqtscript4-core, libqtscript4-gui,
+      libqtscript4-network and libqtscript4-xml
+  * Update debian/rules:
+    - build with Qt5
+    - disable QML support
+    - delete --parallel and --list-missing options from dh
+    - use REPLACE_VERSION configuration option to set of proper program version
+  * Update debian/source/lintian-overrides.
+  * Update debian/libeiskaltdcpp-dev.links.
+  * Update debian/libeiskaltdcpp2.* files.
+  * Update debian/copyright.
+
+ -- Boris Pek <tehnick@debian.org>  Mon, 19 Feb 2018 02:49:13 +0300
+
+eiskaltdcpp (2.2.9-7) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.1.3 (was 4.1.1): no changes required.
+  * Bump debhelper version to 11~ (was 9); update debian/compat.
+  * Add patch fix-build-with-miniupnpc-2.0.x. (Closes: #890507)
+  * Update years and URLs in debian/copyright.
+
+ -- Boris Pek <tehnick@debian.org>  Fri, 16 Feb 2018 01:02:48 +0300
+
+eiskaltdcpp (2.2.9-6) unstable; urgency=medium
+
+  * Move to unstable: no changes required.
+
+ -- Boris Pek <tehnick@debian.org>  Fri, 17 Nov 2017 05:02:37 +0300
+
+eiskaltdcpp (2.2.9-5) experimental; urgency=medium
+
+  * Add patch add-compatibility-with-OpenSSL-1.1.x. (Closes: #858436)
+  * Update debian/control:
+    - bump Standards-Version to 4.1.1 (was 3.9.6)
+    - delete build dependencies from chrpath and libgtk-3-dev
+    - change build dependency from libssl1.0-dev to libssl-dev
+    - update dependencies of eiskaltdcpp metapackage
+    - set "Multi-Arch: foreign" to binary packages eiskaltdcpp-common,
+      eiskaltdcpp-emoticons, eiskaltdcpp-scripts, eiskaltdcpp-sounds,
+      eiskaltdcpp-gtk-data and eiskaltdcpp-qt-data
+    - set "Multi-Arch: no" to binary packages libeiskaltdcpp2.2 and
+      libeiskaltdcpp-dev
+    - binary package eiskaltdcpp-emoticons now recommends php-cli instead of
+      suggestion of php5-cli
+    - move binary package libeiskaltdcpp2.2 to section libs
+    - delete all *-dbg packages for migration to automatic debug packages
+    - delete package eiskaltdcpp-gtk3 because build with GTK+ 3.x is not stable
+      enough and it will not be supported in the future versions of program;
+      package eiskaltdcpp-gtk will be used instead
+    - delete package eiskaltdcpp-qt-mini for simplifying build rules;
+      package eiskaltdcpp-qt will be used instead
+    - eiskaltdcpp-gtk-data and eiskaltdcpp-qt-data now suggests php-cli instead
+      of php5-cli
+    - update short descriptions of eiskaltdcpp-gtk anf eiskaltdcpp-qt packages
+  * Delete debian/eiskaltdcpp-{gtk3|qt-mini}.files files.
+  * Delete debian/eiskaltdcpp-{gtk3|qt-mini}.desktop files.
+  * Rename all debian/*eiskaltdcpp*.files to debian/*eiskaltdcpp*.install.
+  * Simplify debian/rules after removing of packages eiskaltdcpp-gtk3,
+    eiskaltdcpp-qt-mini and all *-dbg packages.
+  * Delete debian/eiskaltdcpp-qt-data.lintian-overrides.
+  * Delete debian/eiskaltdcpp-scripts.lintian-overrides.
+
+ -- Boris Pek <tehnick@debian.org>  Fri, 17 Nov 2017 00:04:22 +0300
+
+eiskaltdcpp (2.2.9-4.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Build with OpenSSL 1.0 (Closes: #828290).
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Tue, 03 Jan 2017 16:11:36 +0500
 
 eiskaltdcpp (2.2.9-4) unstable; urgency=medium
 
