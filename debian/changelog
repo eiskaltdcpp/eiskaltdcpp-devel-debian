@@ -1,3 +1,12 @@
+eiskaltdcpp-devel (2.2.10-271-gf85ba8c0-0ppa1~cosmic1) cosmic; urgency=medium
+
+  * New Git snapshot.
+  * Update debian/control.
+  * Update debian/source/lintian-overrides.
+  * Add debian/upstream/metadata.
+
+ -- Boris Pek <tehnick@debian.org>  Mon, 08 Oct 2018 01:40:22 +0300
+
 eiskaltdcpp-devel (2.2.10-269-gd37d47d7-0ppa1~cosmic1) cosmic; urgency=medium
 
   * New Git snapshot.
