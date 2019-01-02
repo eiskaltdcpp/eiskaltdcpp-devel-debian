@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.2.10-284-ga1fdeb86-0ppa1~cosmic1) cosmic; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 02 Jan 2019 03:25:16 +0300
+
 eiskaltdcpp-devel (2.2.10-271-gf85ba8c0-0ppa1~cosmic1) cosmic; urgency=medium
 
   * New Git snapshot.
