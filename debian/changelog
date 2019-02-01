@@ -403,7 +403,7 @@ eiskaltdcpp (2.2.0-1) unstable; urgency=low
 eiskaltdcpp (2.1.1-2) experimental; urgency=low
 
   * UPnP was temporary switched off because of sponsor's remark.
-    (also see http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=444392)
+    (See: https://bugs.debian.org/444392)
 
  -- Boris Pek <tehnick-8@mail.ru>  Sat, 11 Dec 2010 17:11:21 +0200
 
