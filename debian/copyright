@@ -3,9 +3,6 @@ Debianized-By: Boris Pek <tehnick-8@yandex.ru>
 Debianized-Date: Sat, 06 Feb 2010 03:43:21 +0300
 Upstream-Name: EiskaltDC++
 Upstream-Contact: Boris Pek <tehnick-8@yandex.ru>
-                  Eugene Petrov <dhamp@ya.ru>
-                  Pavel Vatagin <pavelvat@gmail.com>
-                  Andrey Karlov <dein.negativ@gmail.com>
 Source: https://github.com/eiskaltdcpp/eiskaltdcpp
 
 Files: *
