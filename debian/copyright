@@ -192,11 +192,6 @@ Files: eiskaltdcpp-cli/*
 Copyright: 2011 Dmitry Kolosov <onyx@z-up.ru>
 License: BSD-2-clause
 
-Files: upnp/miniupnpc/*
-Copyright: 1991-1993 The Regents of the University of California
-           2005-2012 Thomas Bernard (http://miniupnp.free.fr/)
-License: BSD-3-clause
-
 Files: json/jsoncpp/*
 Copyright: 2007-2011 Baptiste Lepilleur
 License: Expat or public-domain
