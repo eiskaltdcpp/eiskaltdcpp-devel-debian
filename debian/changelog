@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.2.10-531-g6c420aac-0ppa1~disco1) disco; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 18 Apr 2019 23:26:45 +0300
+
 eiskaltdcpp-devel (2.2.10-527-g8ab44207-0ppa1~disco1) disco; urgency=medium
 
   * New Git snapshot.
