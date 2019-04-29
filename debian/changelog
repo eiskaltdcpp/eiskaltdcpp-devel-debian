@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.2.10-554-ga5aeb328-0ppa1~eoan1) eoan; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 30 Apr 2019 02:02:35 +0300
+
 eiskaltdcpp-devel (2.2.10-539-ga00d7793-0ppa1~eoan1) eoan; urgency=medium
 
   * New Git snapshot.
