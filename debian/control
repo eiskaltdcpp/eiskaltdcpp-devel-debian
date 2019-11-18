@@ -29,7 +29,7 @@ Build-Depends: cmake,
 Homepage: https://github.com/eiskaltdcpp/eiskaltdcpp
 Vcs-Git: https://github.com/eiskaltdcpp/eiskaltdcpp-devel-debian.git
 Vcs-Browser: https://github.com/eiskaltdcpp/eiskaltdcpp-devel-debian
-Standards-Version: 4.4.0
+Standards-Version: 4.4.1
 
 Package: eiskaltdcpp
 Section: metapackages
