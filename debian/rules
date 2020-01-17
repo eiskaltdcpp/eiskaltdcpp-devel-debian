@@ -18,6 +18,7 @@ CMAKEOPTS = -DUSE_ASPELL=ON \
             -DUSE_QT=OFF \
             -DUSE_QT_QML=OFF \
             -DUSE_QT_SQLITE=ON \
+            -DUSE_LIBCANBERRA=ON \
             -DWITH_DEV_FILES=ON \
             -DWITH_DHT=ON \
             -DWITH_LUASCRIPTS=ON \
