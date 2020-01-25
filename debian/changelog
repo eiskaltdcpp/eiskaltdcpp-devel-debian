@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.2.10-651-ga3a9f3eb-0ppa1~focal1) focal; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Sat, 25 Jan 2020 03:22:56 +0300
+
 eiskaltdcpp-devel (2.2.10-646-g93944747-0ppa1~focal1) focal; urgency=medium
 
   * New Git snapshot.
