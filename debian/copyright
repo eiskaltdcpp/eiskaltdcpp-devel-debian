@@ -171,6 +171,12 @@ Files: eiskaltdcpp-qt/src/codeeditor/*
 Copyright: 2011 Nokia Corporation and/or its subsidiary(-ies).
 License: BSD-3-clause
 
+Files: eiskaltdcpp-qt/*.appdata.xml
+Copyright: not-applicable
+License: cc0-1.0
+ No license required for any purpose; the work is not subject to copyright
+ in any jurisdiction.
+
 Files: eiskaltdcpp-gtk/src/*
        eiskaltdcpp-gtk/ui/*
 Copyright: 2004-2010 Jens Oknelid <paskharen@gmail.com>
