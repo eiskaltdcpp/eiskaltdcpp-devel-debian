@@ -33,6 +33,8 @@ CMAKEOPTS = -DUSE_ASPELL=ON \
             -DCHECK_GTK_DEPRECATED=OFF \
             -DREPLACE_VERSION="$(DEB_VERSION_UPSTREAM)"
 
+EXCLUDE_FILES=usr/share/eiskaltdcpp/emoticons/*/READ_ME.txt
+
 %:
 	dh $@ --parallel
 
@@ -41,4 +43,4 @@ override_dh_auto_configure:
 
 override_dh_install:
 	dh_install
-	rm -f $(CURDIR)/debian/eiskaltdcpp-emoticons/usr/share/eiskaltdcpp/emoticons/*/READ_ME.txt
+	rm -f $(CURDIR)/debian/eiskaltdcpp-emoticons/$(EXCLUDE_FILES)
