@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.2.10-701-gbdb78455-0ppa1~groovy1) groovy; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Sat, 24 Oct 2020 16:23:08 +0300
+
 eiskaltdcpp-devel (2.2.10-699-g743e1510-0ppa1~groovy1) groovy; urgency=medium
 
   * New Git snapshot.
