@@ -1,2 +1,5 @@
 # False positives:
 eiskaltdcpp-devel source: package-does-not-install-examples *
+
+# Upstream tarballs do not use a cryptographic signature:
+eiskaltdcpp-devel source: debian-watch-does-not-check-gpg-signature
