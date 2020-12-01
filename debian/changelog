@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.2.10-726-gf269fa44-0ppa1~hirsute1) hirsute; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 02 Dec 2020 02:31:13 +0300
+
 eiskaltdcpp-devel (2.2.10-723-gfa5e73be-0ppa3~hirsute1) hirsute; urgency=medium
 
   * Switch eiskaltdcpp-gtk to GTK+ 3.x.
