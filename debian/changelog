@@ -1,9 +1,10 @@
-eiskaltdcpp-devel (2.4.0-1ppa1~hirsute1) hirsute; urgency=medium
+eiskaltdcpp-devel (2.4.0+10+g39ea768d-0ppa1~hirsute1) hirsute; urgency=medium
 
-  * Sync package on Launchpad with package in Debian.
+  * New Git snapshot.
+  * Sync with stable package eiskaltdcpp.
   * Clean changelog.
 
- -- Boris Pek <tehnick@debian.org>  Thu, 03 Dec 2020 06:07:12 +0300
+ -- Boris Pek <tehnick@debian.org>  Sun, 06 Dec 2020 03:50:35 +0300
 
 eiskaltdcpp (2.4.0-1) unstable; urgency=medium
 
