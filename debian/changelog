@@ -1,237 +1,104 @@
-eiskaltdcpp-devel (2.4.0+2+g825d7996-0ppa1~hirsute1) hirsute; urgency=medium
+eiskaltdcpp-devel (2.4.0-1ppa1~hirsute1) hirsute; urgency=medium
 
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 03 Dec 2020 03:14:54 +0300
-
-eiskaltdcpp-devel (2.2.10-736-g9940ea91-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 03 Dec 2020 00:34:59 +0300
-
-eiskaltdcpp-devel (2.2.10-729-ge937ccfd-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 02 Dec 2020 03:31:29 +0300
-
-eiskaltdcpp-devel (2.2.10-726-gf269fa44-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 02 Dec 2020 02:31:13 +0300
-
-eiskaltdcpp-devel (2.2.10-723-gfa5e73be-0ppa3~hirsute1) hirsute; urgency=medium
-
-  * Switch eiskaltdcpp-gtk to GTK+ 3.x.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 19 Nov 2020 02:09:37 +0300
-
-eiskaltdcpp-devel (2.2.10-723-gfa5e73be-0ppa2~hirsute1) hirsute; urgency=medium
-
-  * Small improvements in the package.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 19 Nov 2020 01:19:37 +0300
-
-eiskaltdcpp-devel (2.2.10-723-gfa5e73be-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 04 Nov 2020 18:21:30 +0300
-
-eiskaltdcpp-devel (2.2.10-720-gdac996af-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 28 Oct 2020 22:43:31 +0300
-
-eiskaltdcpp-devel (2.2.10-717-g61aae710-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 28 Oct 2020 04:53:58 +0300
-
-eiskaltdcpp-devel (2.2.10-715-g385faba5-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 28 Oct 2020 04:27:47 +0300
-
-eiskaltdcpp-devel (2.2.10-713-g1d113ac2-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 28 Oct 2020 02:57:50 +0300
-
-eiskaltdcpp-devel (2.2.10-707-g7a7829f5-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 27 Oct 2020 01:01:58 +0300
-
-eiskaltdcpp-devel (2.2.10-702-g8e4e530d-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 26 Oct 2020 03:08:12 +0300
-
-eiskaltdcpp-devel (2.2.10-701-gbdb78455-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 24 Oct 2020 16:23:08 +0300
-
-eiskaltdcpp-devel (2.2.10-699-g743e1510-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 24 Oct 2020 15:47:25 +0300
-
-eiskaltdcpp-devel (2.2.10-695-g69ef09a8-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 23 Oct 2020 02:18:52 +0300
-
-eiskaltdcpp-devel (2.2.10-692-g0e0ccde5-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 11 Oct 2020 20:45:42 +0300
-
-eiskaltdcpp-devel (2.2.10-690-g6112ed71-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 02 Aug 2020 16:54:57 +0300
-
-eiskaltdcpp-devel (2.2.10-689-g0a574792-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 02 Jul 2020 01:53:20 +0300
-
-eiskaltdcpp-devel (2.2.10-682-g089c08e9-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 26 Jun 2020 21:54:03 +0300
-
-eiskaltdcpp-devel (2.2.10-679-gaf925dd5-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 17 Jun 2020 04:21:09 +0300
-
-eiskaltdcpp-devel (2.2.10-664-g89348ec7-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 14 Apr 2020 22:23:21 +0300
-
-eiskaltdcpp-devel (2.2.10-654-g0a8f7cf7-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 15 Feb 2020 02:18:32 +0300
-
-eiskaltdcpp-devel (2.2.10-651-ga3a9f3eb-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 25 Jan 2020 03:22:56 +0300
-
-eiskaltdcpp-devel (2.2.10-646-g93944747-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 31 Dec 2019 03:34:26 +0300
-
-eiskaltdcpp-devel (2.2.10-645-g64546ad3-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 19 Nov 2019 02:47:12 +0300
-
-eiskaltdcpp-devel (2.2.10-636-ga85c5d8b-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 27 Sep 2019 00:30:51 +0300
-
-eiskaltdcpp-devel (2.2.10-633-gb1eb9a1b-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 17 Sep 2019 23:34:14 +0300
-
-eiskaltdcpp-devel (2.2.10-632-g1be7a445-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-  * Update debian/control.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 25 Jul 2019 00:22:38 +0300
-
-eiskaltdcpp-devel (2.2.10-631-g7bd2f5d6-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
+  * Sync package on Launchpad with package in Debian.
   * Clean changelog.
 
- -- Boris Pek <tehnick@debian.org>  Sun, 02 Jun 2019 13:29:51 +0300
+ -- Boris Pek <tehnick@debian.org>  Thu, 03 Dec 2020 06:07:12 +0300
 
-eiskaltdcpp-devel (2.2.10-271-gf85ba8c0-0ppa1~cosmic1) cosmic; urgency=medium
+eiskaltdcpp (2.4.0-1) unstable; urgency=medium
 
-  * New Git snapshot.
-  * Update debian/control.
+  * Move to unstable: no changes required.
+  * New upstream release.
+  * Update debian/control:
+    - bump Standards-Version to 4.5.1 (was 4.5.0): no changes required
+    - remove build dependencies from libcanberra-gtk-dev, libglade2-dev and
+      libgtk2.0-dev (Closes: #967859 #967327)
+    - add build dependencies from libcanberra-gtk3-dev and libgtk-3-dev
+  * Update debian/rules: switch eiskaltdcpp-gtk to GTK+ 3.x.
+  * Update debian/watch.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 03 Dec 2020 05:46:03 +0300
+
+eiskaltdcpp (2.2.10+723+gfa5e73be-1) experimental; urgency=medium
+
+  * New Git snapshot:
+    - removed dependency from Boost
+    - fixed compilation error in eiskaltdcpp-gtk/src/WulforUtil.hh
+      (Closes: #966913)
+  * Remove debian/compat.
+  * Update debian/control:
+    - bump Standards-Version to 4.5.0 (was 4.4.0): no changes required
+    - replace build dependency from debhelper (>= 12~) to
+      debhelper-compat (= 13)
+    - add build dependency from libcanberra-gtk-dev
+    - remove build dependencies from libboost-dev and libboost-system-dev
+    - remove strict versions from dependencies from eiskaltdcpp-{qt|gtk}-data
+      packages in eiskaltdcpp-{qt|gtk} packages
+    - add Rules-Requires-Root: no
+  * Update debian/rules:
+    - add override_dh_install for removing of extra files
+    - configure project with -DUSE_LIBCANBERRA=ON build option
+    - remove DEB_LDFLAGS_MAINT_APPEND variable with -Wl,--as-needed flag
+  * Update debian/copyright.
   * Update debian/source/lintian-overrides.
+  * Update debian/eiskaltdcpp-scripts.install.
+  * Remove debian/eiskaltdcpp-daemon.lintian-overrides.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 05 Nov 2020 02:18:35 +0300
+
+eiskaltdcpp (2.2.10+583+g17a6b034-2) unstable; urgency=medium
+
+  * Move to unstable: no changes required.
+  * Update debian/control:
+    - update URLs in Vcs-* fields
+    - bump Standards-Version to 4.4.0 (was 4.3.0): no changes required
+    - update long descriptions of binary packages
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 25 Jul 2019 02:00:29 +0300
+
+eiskaltdcpp (2.2.10+583+g17a6b034-1) experimental; urgency=medium
+
+  * New Git snapshot: fixed build in Debian GNU/Hurd.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 07 May 2019 03:33:27 +0300
+
+eiskaltdcpp (2.2.10+569+gbbc0b7ce-1) experimental; urgency=medium
+
+  * New Git snapshot.
+  * Update short and long descriptions of all packages.
+  * Cosmetic changes in debian/rules.
+  * Update debian/copyright.
+
+ -- Boris Pek <tehnick@debian.org>  Sun, 05 May 2019 00:39:19 +0300
+
+eiskaltdcpp (2.2.10+340+g44d8aea4-1) unstable; urgency=medium
+
+  * New Git snapshot.
+  * Secure URLs: http --> https.
+  * Bump Standards-Version to 4.3.0 (was 4.1.3).
+  * Bump debhelper version to 12~ (was 11); update debian/compat.
+  * Simplify debian/rules:
+    - stop adding of CPPFLAGS into CXXFLAGS using of DEB_CXXFLAGS_MAINT_APPEND
+      as workaround for cmake because debhelper already does this since version
+      9.20120417
+    - delete --buildsystem=cmake option from dh
+    - delete get-orig-source section
   * Add debian/upstream/metadata.
+  * Update debian/copyright.
 
- -- Boris Pek <tehnick@debian.org>  Mon, 08 Oct 2018 01:40:22 +0300
+ -- Boris Pek <tehnick@debian.org>  Mon, 18 Feb 2019 02:08:15 +0300
 
-eiskaltdcpp-devel (2.2.10-269-gd37d47d7-0ppa1~cosmic1) cosmic; urgency=medium
+eiskaltdcpp (2.2.10+188+g1e72256a-2) unstable; urgency=medium
 
-  * New Git snapshot.
+  * Move to unstable: no changes required.
 
- -- Boris Pek <tehnick@debian.org>  Sun, 16 Sep 2018 20:35:11 +0300
+ -- Boris Pek <tehnick@debian.org>  Mon, 05 Mar 2018 00:28:00 +0300
 
-eiskaltdcpp-devel (2.2.10-255-ge24ed2bb-0ppa1~cosmic1) cosmic; urgency=medium
+eiskaltdcpp (2.2.10+188+g1e72256a-1) experimental; urgency=medium
 
-  * New Git snapshot.
+  * New Git snapshot: provide build for Debian GNU/Hurd.
 
- -- Boris Pek <tehnick@debian.org>  Thu, 06 Sep 2018 00:25:25 +0300
-
-eiskaltdcpp-devel (2.2.10-242-g763f53c7-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 01 Sep 2018 22:02:23 +0300
-
-eiskaltdcpp-devel (2.2.10-232-ge35bcd07-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 27 Aug 2018 02:58:32 +0300
-
-eiskaltdcpp-devel (2.2.10-229-g6bda20c7-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 26 Aug 2018 11:04:07 +0300
-
-eiskaltdcpp-devel (2.2.10-225-g8d7a951a-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 26 Aug 2018 02:57:11 +0300
-
-eiskaltdcpp-devel (2.2.10-188-g1e72256a-0ppa1~bionic1) bionic; urgency=medium
-
-  * New Git snapshot.
-  * Sync with stable package eiskaltdcpp.
-  * Clean changelog.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 02 Mar 2018 01:23:00 +0300
+ -- Boris Pek <tehnick@debian.org>  Fri, 02 Mar 2018 01:45:04 +0300
 
 eiskaltdcpp (2.2.10+186+g1c0173ec-2) unstable; urgency=medium
 
