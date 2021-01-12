@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.4.0+74+g8eb095e6-0ppa1~hirsute1) hirsute; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 13 Jan 2021 00:03:22 +0300
+
 eiskaltdcpp-devel (2.4.0+70+g2781211a-0ppa1~hirsute1) hirsute; urgency=medium
 
   * New Git snapshot.
