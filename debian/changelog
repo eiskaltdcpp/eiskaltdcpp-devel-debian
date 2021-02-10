@@ -1,10 +1,10 @@
-eiskaltdcpp-devel (2.4.1+20+g2314c20c-0ppa1~hirsute1) hirsute; urgency=medium
+eiskaltdcpp-devel (2.4.1+21+ga5d3e840-0ppa1~hirsute1) hirsute; urgency=medium
 
   * New Git snapshot.
   * Sync with stable package eiskaltdcpp.
   * Clean changelog.
 
- -- Boris Pek <tehnick@debian.org>  Tue, 09 Feb 2021 21:40:05 +0300
+ -- Boris Pek <tehnick@debian.org>  Thu, 11 Feb 2021 02:40:48 +0300
 
 eiskaltdcpp (2.4.0-1) unstable; urgency=medium
 
