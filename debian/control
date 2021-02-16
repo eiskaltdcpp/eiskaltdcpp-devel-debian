@@ -38,7 +38,7 @@ Depends: eiskaltdcpp-emoticons,
          eiskaltdcpp-scripts,
          eiskaltdcpp-sounds,
          ${misc:Depends}
-Description: file sharing program using DC and ADC protocols (metapackage)
+Description: file sharing program using Direct Connect protocols (metapackage)
  This package installs the most popular and recommended combination of
  EiskaltDC++ related packages.
  .
