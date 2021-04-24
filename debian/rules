@@ -37,7 +37,7 @@ EXCLUDE_FILES = usr/share/eiskaltdcpp/emoticons/*/READ_ME.txt \
                 usr/share/eiskaltdcpp/sounds/READ_ME.txt
 
 %:
-	dh $@ --parallel
+	dh $@
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(CMAKEOPTS)

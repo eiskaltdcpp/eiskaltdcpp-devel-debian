@@ -3,7 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: cmake,
-               debhelper (>= 9),
+               debhelper-compat (= 11),
                libaspell-dev,
                libattr1-dev,
                libbz2-dev,
