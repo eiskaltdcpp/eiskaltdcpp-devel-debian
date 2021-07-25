@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.4.2+9+g68900dac-0ppa1~impish1) impish; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Sun, 25 Jul 2021 08:50:50 +0300
+
 eiskaltdcpp-devel (2.4.2+7+g7ce88409-0ppa1~impish1) impish; urgency=medium
 
   * New Git snapshot.
