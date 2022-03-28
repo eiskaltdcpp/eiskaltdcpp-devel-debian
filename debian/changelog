@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.4.2+21+g918a6cdf-0ppa1~jammy1) jammy; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 29 Mar 2022 02:37:54 +0300
+
 eiskaltdcpp-devel (2.4.2+20+gf6df44fe-0ppa1~jammy1) jammy; urgency=medium
 
   * New Git snapshot.
