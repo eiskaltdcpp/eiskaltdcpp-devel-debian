@@ -103,7 +103,7 @@ Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: libeiskaltdcpp2.2
 Breaks: libeiskaltdcpp2.2
-Multi-Arch: no
+Multi-Arch: same
 Description: core library for EiskaltDC++
  This package contains core library which is used by all EiskaltDC++ programs.
  .
@@ -116,7 +116,7 @@ Package: libeiskaltdcpp-dev
 Section: libdevel
 Architecture: any
 Depends: libeiskaltdcpp2.4 (= ${binary:Version}), ${misc:Depends}
-Multi-Arch: no
+Multi-Arch: same
 Description: core library for EiskaltDC++ (development files)
  This package contains development files for EiskaltDC++ core library.
  .
