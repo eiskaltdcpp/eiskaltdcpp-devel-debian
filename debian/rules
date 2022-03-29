@@ -31,6 +31,7 @@ CMAKEOPTS = -DUSE_ASPELL=ON \
             -DXMLRPC_DAEMON=OFF \
             -DJSONRPC_DAEMON=ON \
             -DCHECK_GTK_DEPRECATED=OFF \
+            -DCMAKE_BUILD_RPATH_USE_ORIGIN=ON \
             -DREPLACE_VERSION="$(DEB_VERSION_UPSTREAM)"
 
 EXCLUDE_FILES = usr/share/eiskaltdcpp/emoticons/*/READ_ME.txt \
