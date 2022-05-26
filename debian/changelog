@@ -1,3 +1,9 @@
+eiskaltdcpp-devel (2.4.2+41+g2c4bd891-0ppa1~kinetic1) kinetic; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Fri, 27 May 2022 01:01:22 +0300
+
 eiskaltdcpp-devel (2.4.2+36+ga79c4dea-0ppa1~kinetic1) kinetic; urgency=medium
 
   * New Git snapshot.
