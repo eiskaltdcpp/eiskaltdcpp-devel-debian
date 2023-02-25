@@ -1,3 +1,10 @@
+eiskaltdcpp-devel (2.4.2+59+gac650c7c-0ppa1~lunar1) lunar; urgency=medium
+
+  * New Git snapshot.
+  * Clean changelog.
+
+ -- Boris Pek <tehnick@debian.org>  Sun, 26 Feb 2023 01:41:57 +0300
+
 eiskaltdcpp (2.4.2-0ppa1~hirsute1) hirsute; urgency=medium
 
   * New upstream release.
