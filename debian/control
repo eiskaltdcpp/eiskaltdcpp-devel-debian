@@ -27,7 +27,7 @@ Build-Depends: cmake,
 Homepage: https://github.com/eiskaltdcpp/eiskaltdcpp
 Vcs-Git: https://github.com/eiskaltdcpp/eiskaltdcpp-devel-debian.git
 Vcs-Browser: https://github.com/eiskaltdcpp/eiskaltdcpp-devel-debian
-Standards-Version: 4.6.1
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 
 Package: eiskaltdcpp
