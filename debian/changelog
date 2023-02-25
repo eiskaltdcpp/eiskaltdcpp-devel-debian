@@ -1,148 +1,21 @@
-eiskaltdcpp-devel (2.4.2+50+gc0389b79-0ppa1~lunar1) lunar; urgency=medium
+eiskaltdcpp (2.4.2-0ppa1~hirsute1) hirsute; urgency=medium
 
-  * New Git snapshot.
+  * New upstream release.
 
- -- Boris Pek <tehnick@debian.org>  Fri, 03 Feb 2023 00:06:52 +0300
+ -- Boris Pek <tehnick@debian.org>  Wed, 03 Mar 2021 00:25:32 +0300
 
-eiskaltdcpp-devel (2.4.2+49+gf084c5a1-0ppa1~kinetic1) kinetic; urgency=medium
+eiskaltdcpp (2.4.1-0ppa1~hirsute1) hirsute; urgency=medium
 
-  * New Git snapshot.
+  * New upstream release.
 
- -- Boris Pek <tehnick@debian.org>  Wed, 05 Oct 2022 01:17:41 +0300
+ -- Boris Pek <tehnick@debian.org>  Sun, 24 Jan 2021 15:58:08 +0300
 
-eiskaltdcpp-devel (2.4.2+48+gbc17ba85-0ppa1~kinetic1) kinetic; urgency=medium
+eiskaltdcpp (2.4.0-1ppa1~hirsute1) hirsute; urgency=medium
 
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 22 Sep 2022 11:43:47 +0300
-
-eiskaltdcpp-devel (2.4.2+47+gd84f87de-0ppa1~kinetic1) kinetic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 06 Jun 2022 01:39:57 +0300
-
-eiskaltdcpp-devel (2.4.2+45+ga8c07b8f-0ppa1~kinetic1) kinetic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 30 May 2022 03:04:23 +0300
-
-eiskaltdcpp-devel (2.4.2+41+g2c4bd891-0ppa1~kinetic1) kinetic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 27 May 2022 01:01:22 +0300
-
-eiskaltdcpp-devel (2.4.2+36+ga79c4dea-0ppa1~kinetic1) kinetic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 23 May 2022 20:04:09 +0300
-
-eiskaltdcpp-devel (2.4.2+35+g7867fb8f-0ppa1~kinetic1) kinetic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 23 May 2022 03:20:19 +0300
-
-eiskaltdcpp-devel (2.4.2+33+g55e80a75-0ppa1~kinetic1) kinetic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 23 May 2022 01:58:54 +0300
-
-eiskaltdcpp-devel (2.4.2+29+g24c09fb3-0ppa2~jammy1) jammy; urgency=medium
-
-  * Small improvements in the package.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 06 Apr 2022 00:29:45 +0300
-
-eiskaltdcpp-devel (2.4.2+29+g24c09fb3-0ppa1~jammy1) jammy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 05 Apr 2022 02:57:36 +0300
-
-eiskaltdcpp-devel (2.4.2+26+g707659b6-0ppa1~jammy1) jammy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 29 Mar 2022 16:26:38 +0300
-
-eiskaltdcpp-devel (2.4.2+25+g78d6bfd0-0ppa1~jammy1) jammy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 29 Mar 2022 05:27:16 +0300
-
-eiskaltdcpp-devel (2.4.2+21+g918a6cdf-0ppa1~jammy1) jammy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 29 Mar 2022 02:37:54 +0300
-
-eiskaltdcpp-devel (2.4.2+20+gf6df44fe-0ppa1~jammy1) jammy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 19 Mar 2022 01:00:55 +0300
-
-eiskaltdcpp-devel (2.4.2+19+g0a1fa4a7-0ppa1~jammy1) jammy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 16 Mar 2022 22:05:08 +0300
-
-eiskaltdcpp-devel (2.4.2+15+g10b1a9b6-0ppa1~impish1) impish; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 16 Dec 2021 04:28:40 +0300
-
-eiskaltdcpp-devel (2.4.2+12+g89011c64-0ppa1~impish1) impish; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 14 Oct 2021 00:42:00 +0300
-
-eiskaltdcpp-devel (2.4.2+9+g68900dac-0ppa1~impish1) impish; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 25 Jul 2021 08:50:50 +0300
-
-eiskaltdcpp-devel (2.4.2+7+g7ce88409-0ppa1~impish1) impish; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 24 Apr 2021 19:26:37 +0300
-
-eiskaltdcpp-devel (2.4.2+3+gc2a83ab0-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 20 Mar 2021 01:14:30 +0300
-
-eiskaltdcpp-devel (2.4.2+2+ge3d59bc4-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 15 Mar 2021 23:09:41 +0300
-
-eiskaltdcpp-devel (2.4.2+1+ge6915a87-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 03 Mar 2021 00:47:55 +0300
-
-eiskaltdcpp-devel (2.4.1+21+ga5d3e840-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-  * Sync with stable package eiskaltdcpp.
+  * Sync package on Launchpad with package in Debian.
   * Clean changelog.
 
- -- Boris Pek <tehnick@debian.org>  Thu, 11 Feb 2021 02:40:48 +0300
+ -- Boris Pek <tehnick@debian.org>  Thu, 03 Dec 2020 06:07:12 +0300
 
 eiskaltdcpp (2.4.0-1) unstable; urgency=medium
 
